@@ -27,6 +27,7 @@ async def setup_database():
         await db.execute('''CREATE TABLE IF NOT EXISTS bets (
                             id INTEGER PRIMARY KEY AUTOINCREMENT,
                             game_id INTEGER UNIQUE,
+                            game_start INTEGER,
                             country TEXT,
                             league TEXT,
                             team_1 TEXT,
@@ -59,51 +60,51 @@ async def get_api():
 # 🔹 Функция поиска игр
 async def search_game():
     result = await get_api()
-    print(result)
-    # async with aiosqlite.connect(DATABASE) as db:
-    #     async with db.execute("SELECT game_id FROM bets") as cursor:
-    #         existing_games = {row[0] async for row in cursor}
-    #
-    for item in result:
-        for element in item.get('events_list', []):
-            if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
+    async with aiosqlite.connect(DATABASE) as db:
+        async with db.execute("SELECT game_id FROM bets") as cursor:
+            existing_games = {row[0] async for row in cursor}
 
-                get_total = 0
-                for search_total in element.get('game_oc_list', []):
-                    if search_total.get('oc_group_name') == 'Тотал' and 'М' in search_total.get('oc_name', ''):
-                        get_total = float(search_total['oc_name'].replace('М', ''))
+        for item in result:
+            for element in item.get('events_list', []):
+                if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
 
-                score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
-                result_total = get_total - (score_1 + score_2) * 2
+                    get_total = 0
+                    for search_total in element.get('game_oc_list', []):
+                        if search_total.get('oc_group_name') == 'Тотал' and 'М' in search_total.get('oc_name', ''):
+                            get_total = float(search_total['oc_name'].replace('М', ''))
 
-                if result_total < 0:
-                    game_id = element.get('game_id')
+                    score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
+                    result_total = get_total - (score_1 + score_2) * 2
 
-                    # # 🔹 Проверяем, нет ли уже этой игры в базе
-                    # if game_id in existing_games:
-                    #     continue
+                    if result_total < 0 or result_total > 0:
+                        game_id = element.get('game_id')
 
-                    country = element.get('country_name')
-                    league = element.get('tournament_name_ru')
-                    team_1 = element.get('opp_1_name_ru')
-                    team_2 = element.get('opp_2_name_ru')
-                    score = element.get('score_period')
-                    bet = f'ТБ{get_total}'
-                    coefficient = 1.8
+                        # 🔹 Проверяем, нет ли уже этой игры в базе
+                        if game_id in existing_games:
+                            continue
 
-                    message_text = (f"🏆 {country} - {league}\n"
-                                    f"⚽ {team_1} - {team_2}\n"
-                                    f"📊 Счет: ({score})\n"
-                                    f"🎯 Ставка: {bet} - КФ {coefficient}\n"
-                                    f"⏳ Результат: ⏳⏳⏳")
-                    print(message_text)
+                        country = element.get('country_name')
+                        league = element.get('tournament_name_ru')
+                        team_1 = element.get('opp_1_name_ru')
+                        team_2 = element.get('opp_2_name_ru')
+                        score = element.get('score_period')
+                        bet = f'ТБ{get_total}'
+                        coefficient = 1.8
+                        game_start = element.get('game_start')
 
-                        #await bot.send_message(CHAT_ID, message_text)
+                        message_text = (f"🏆 {country} - {league}\n"
+                                        f"⚽ {team_1} - {team_2}\n"
+                                        f"📊 Счет: ({score})\n"
+                                        f"🎯 Ставка: {bet} - КФ {coefficient}\n"
+                                        f"⏳ Результат: ⏳⏳⏳")
+                        print(message_text)
+
+                        await bot.send_message(text=message_text, chat_id=6451994483)
 
                         # await db.execute(
-                        #     "INSERT INTO bets (game_id, country, league, team_1, team_2, score, bet, coefficient, message_id, status) "
-                        #     "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                        #     (game_id, country, league, team_1, team_2, score, bet, coefficient, msg.message_id, 'pending')
+                        #     "INSERT INTO bets (game_id, country, league, team_1, team_2, score, bet, coefficient, message_id, status, game_start) "
+                        #     "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                        #     (game_id, country, league, team_1, team_2, score, bet, coefficient, msg.message_id, 'pending', game_start)
                         # )
                         # await db.commit()
 
