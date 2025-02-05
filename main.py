@@ -65,6 +65,7 @@ async def get_api():
 # 🔹 Функция поиска игр
 async def search_game():
     result = await get_api()
+    print('nen')
     try:
 
         async with aiosqlite.connect(DATABASE) as db:
@@ -75,12 +76,14 @@ async def search_game():
                 for element in item.get('events_list', []):
                     if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
 
-
-
-                        get_total = 0
+                        # Поиск тотала среди коэффициентов
+                        for search_total in element.get('game_oc_list', []):
+                            if search_total.get('oc_group_name') == 'Тотал' and 'М' in search_total.get('oc_name', ''):
+                                get_total = float(search_total['oc_name'].replace('М', ''))
 
                         score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
                         result_total = get_total - (score_1 + score_2) * 2
+                        print(f'{result_total=}')
 
                         game_id = element.get('game_id')
                         # 🔹 Проверяем, нет ли уже этой игры в базе
