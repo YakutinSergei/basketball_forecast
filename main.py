@@ -76,7 +76,7 @@ async def search_game():
                 for element in item.get('events_list', []):
                     if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
 
-                        # Поиск тотала среди коэффициентов
+                        # Поиск тотала среди коэффициентов 
                         for search_total in element.get('game_oc_list', []):
                             if search_total.get('oc_group_name') == 'Тотал' and 'М' in search_total.get('oc_name', ''):
                                 get_total = float(search_total['oc_name'].replace('М', ''))
