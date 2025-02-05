@@ -116,7 +116,7 @@ async def search_game():
                     game_start = element.get('game_start')
 
                     message_text = (f"🏆 {country} - {league}\n"
-                                    f"⚽ {team_1} - {team_2}\n"
+                                    f"🏀 {team_1} - {team_2}\n"
                                     f"📊 Счет: ({score})\n"
                                     f"🎯 Ставка: {bet} - КФ {coefficient}\n"
                                     f"⏳ Результат: ⏳⏳⏳\n"
