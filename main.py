@@ -101,10 +101,11 @@ async def search_game():
                                 bet = f'ТМ{get_total}'
                                 print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
                     else:
+                        bet = ''
+                        coefficient = ''
                         continue
 
-                    bet = ''
-                    coefficient = ''
+
                     country = element.get('country_name')
                     league = element.get('tournament_name_ru')
                     team_1 = element.get('opp_1_name_ru')
