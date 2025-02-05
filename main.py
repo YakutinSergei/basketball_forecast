@@ -7,12 +7,17 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.types import Message
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage, SimpleEventIsolation
+from environs import Env
+
+
+env = Env()
+env.read_env()
 
 # 🔹 Константы
-TOKEN = "8079892130:AAEPo5Kzmks8m_6YfIG_fnyd8FeLPsyL6kY"  # Токен бота
-CHAT_ID = "YOUR_TELEGRAM_CHAT_ID"  # ID группы для сообщений
+TOKEN = env('BOT_TOKEN')  # Токен бота
+CHAT_ID = env('CHAT_ID')  # ID группы для сообщений
 URL = 'https://odds.stagbet.site/v1/events/3/0/sub/100/live/ru'
-HEADERS = {'Package': 'Ilgiz12yvO71nYehsWkc23JgdobL'}
+HEADERS = {'Package': f'{env('KEY')}'}
 DATABASE = "bets.db"
 FILENAME = "data.json"
 
@@ -60,6 +65,7 @@ async def get_api():
 # 🔹 Функция поиска игр
 async def search_game():
     result = await get_api()
+
     async with aiosqlite.connect(DATABASE) as db:
         async with db.execute("SELECT game_id FROM bets") as cursor:
             existing_games = {row[0] async for row in cursor}
@@ -68,45 +74,62 @@ async def search_game():
             for element in item.get('events_list', []):
                 if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
 
+
+
                     get_total = 0
-                    for search_total in element.get('game_oc_list', []):
-                        if search_total.get('oc_group_name') == 'Тотал' and 'М' in search_total.get('oc_name', ''):
-                            get_total = float(search_total['oc_name'].replace('М', ''))
 
                     score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
                     result_total = get_total - (score_1 + score_2) * 2
 
-                    if result_total < 0 or result_total > 0:
-                        game_id = element.get('game_id')
+                    game_id = element.get('game_id')
+                    # 🔹 Проверяем, нет ли уже этой игры в базе
+                    if game_id in existing_games:
+                        continue
 
-                        # 🔹 Проверяем, нет ли уже этой игры в базе
-                        if game_id in existing_games:
-                            continue
+                    if result_total < -18:
+                        for total in element.get('game_oc_list', []):
+                            if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'Б':
+                                coefficient = total.get("oc_rate")
+                                get_total = float(total['oc_name'].replace('Б', ''))
+                                bet = f'ТБ{get_total}'
+                                print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
+                    elif result_total > 18:
+                        for total in element.get('game_oc_list', []):
+                            if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'М':
+                                coefficient = total.get("oc_rate")
+                                get_total = float(total['oc_name'].replace('М', ''))
+                                bet = f'ТМ{get_total}'
+                                print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
+                    else:
+                        continue
 
-                        country = element.get('country_name')
-                        league = element.get('tournament_name_ru')
-                        team_1 = element.get('opp_1_name_ru')
-                        team_2 = element.get('opp_2_name_ru')
-                        score = element.get('score_period')
-                        bet = f'ТБ{get_total}'
-                        coefficient = 1.8
-                        game_start = element.get('game_start')
 
-                        message_text = (f"🏆 {country} - {league}\n"
-                                        f"⚽ {team_1} - {team_2}\n"
-                                        f"📊 Счет: ({score})\n"
-                                        f"🎯 Ставка: {bet} - КФ {coefficient}\n"
-                                        f"⏳ Результат: ⏳⏳⏳")
-                        print(message_text)
 
-                        await bot.send_message(text=message_text, chat_id=6451994483)
 
-                        # await db.execute(
-                        #     "INSERT INTO bets (game_id, country, league, team_1, team_2, score, bet, coefficient, message_id, status, game_start) "
-                        #     "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                        #     (game_id, country, league, team_1, team_2, score, bet, coefficient, msg.message_id, 'pending', game_start)
-                        # )
-                        # await db.commit()
+                    country = element.get('country_name')
+                    league = element.get('tournament_name_ru')
+                    team_1 = element.get('opp_1_name_ru')
+                    team_2 = element.get('opp_2_name_ru')
+                    score = element.get('score_period')
+
+
+                    game_start = element.get('game_start')
+
+                    message_text = (f"🏆 {country} - {league}\n"
+                                    f"⚽ {team_1} - {team_2}\n"
+                                    f"📊 Счет: ({score})\n"
+                                    f"🎯 Ставка: {bet} - КФ {coefficient}\n"
+                                    f"⏳ Результат: ⏳⏳⏳\n"
+                                    )
+
+                    msg = await bot.send_message(text=message_text, chat_id=env('CHAT_ID'))
+
+                    await db.execute(
+                        "INSERT INTO bets (game_id, country, league, team_1, team_2, score, bet, coefficient, message_id, status, game_start) "
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                        (game_id, country, league, team_1, team_2, score, bet, coefficient, msg.message_id, 'pending', game_start)
+                    )
+                    await db.commit()
 
 
 # 🔹 Функция обновления результатов
@@ -132,9 +155,8 @@ async def update_results():
 
 # 🔹 Основной цикл мониторинга
 async def monitoring():
-    print('я тут')
-    while True:
 
+    while True:
         await search_game()  # Поиск игр и публикация сообщений
         await update_results()  # Проверка результатов
         await asyncio.sleep(60)  # Повторяем через 60 секунд
@@ -149,8 +171,7 @@ async def start_handler(message: Message):
 # 🔹 Главная асинхронная функция
 async def main():
     #await bot.delete_webhook(drop_pending_updates=True)
-    print('[jxe')
-    #await setup_database()  # Создаем БД
+    await setup_database()  # Создаем БД
     asyncio.create_task(monitoring())  # Запускаем мониторинг ставок
     await dp.start_polling(bot)
 
