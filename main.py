@@ -86,14 +86,14 @@ async def search_game():
                     if game_id in existing_games:
                         continue
 
-                    if result_total < -18:
+                    if result_total < -18.5:
                         for total in element.get('game_oc_list', []):
                             if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'Б':
                                 coefficient = total.get("oc_rate")
                                 get_total = float(total['oc_name'].replace('Б', ''))
                                 bet = f'ТБ{get_total}'
                                 print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
-                    elif result_total > 18:
+                    elif result_total > 18.5:
                         for total in element.get('game_oc_list', []):
                             if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'М':
                                 coefficient = total.get("oc_rate")
