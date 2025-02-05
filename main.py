@@ -103,8 +103,7 @@ async def search_game():
                     else:
                         continue
 
-
-
+                    bet = ''
 
                     country = element.get('country_name')
                     league = element.get('tournament_name_ru')
