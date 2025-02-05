@@ -65,71 +65,75 @@ async def get_api():
 # 🔹 Функция поиска игр
 async def search_game():
     result = await get_api()
+    try:
 
-    async with aiosqlite.connect(DATABASE) as db:
-        async with db.execute("SELECT game_id FROM bets") as cursor:
-            existing_games = {row[0] async for row in cursor}
+        async with aiosqlite.connect(DATABASE) as db:
+            async with db.execute("SELECT game_id FROM bets") as cursor:
+                existing_games = {row[0] async for row in cursor}
 
-        for item in result:
-            for element in item.get('events_list', []):
-                if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
-
-
-
-                    get_total = 0
-
-                    score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
-                    result_total = get_total - (score_1 + score_2) * 2
-
-                    game_id = element.get('game_id')
-                    # 🔹 Проверяем, нет ли уже этой игры в базе
-                    if game_id in existing_games:
-                        continue
-
-                    if result_total < -18.5:
-                        for total in element.get('game_oc_list', []):
-                            if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'Б':
-                                coefficient = total.get("oc_rate")
-                                get_total = float(total['oc_name'].replace('Б', ''))
-                                bet = f'ТБ{get_total}'
-                                print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
-                    elif result_total > 18.5:
-                        for total in element.get('game_oc_list', []):
-                            if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'М':
-                                coefficient = total.get("oc_rate")
-                                get_total = float(total['oc_name'].replace('М', ''))
-                                bet = f'ТМ{get_total}'
-                                print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
-                    else:
-                        bet = ''
-                        coefficient = ''
-                        continue
+            for item in result:
+                for element in item.get('events_list', []):
+                    if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
 
 
-                    country = element.get('country_name')
-                    league = element.get('tournament_name_ru')
-                    team_1 = element.get('opp_1_name_ru')
-                    team_2 = element.get('opp_2_name_ru')
-                    score = element.get('score_period')
+
+                        get_total = 0
+
+                        score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
+                        result_total = get_total - (score_1 + score_2) * 2
+
+                        game_id = element.get('game_id')
+                        # 🔹 Проверяем, нет ли уже этой игры в базе
+                        if game_id in existing_games:
+                            continue
+
+                        if result_total < -18.5:
+                            for total in element.get('game_oc_list', []):
+                                if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'Б':
+                                    coefficient = total.get("oc_rate")
+                                    get_total = float(total['oc_name'].replace('Б', ''))
+                                    bet = f'ТБ{get_total}'
+                                    print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
+                        elif result_total > 18.5:
+                            for total in element.get('game_oc_list', []):
+                                if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'М':
+                                    coefficient = total.get("oc_rate")
+                                    get_total = float(total['oc_name'].replace('М', ''))
+                                    bet = f'ТМ{get_total}'
+                                    print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
+                        else:
+                            bet = ''
+                            coefficient = ''
+                            continue
 
 
-                    game_start = element.get('game_start')
+                        country = element.get('country_name')
+                        league = element.get('tournament_name_ru')
+                        team_1 = element.get('opp_1_name_ru')
+                        team_2 = element.get('opp_2_name_ru')
+                        score = element.get('score_period')
 
-                    message_text = (f"🏆 {country} - {league}\n"
-                                    f"🏀 {team_1} - {team_2}\n"
-                                    f"📊 Счет: ({score})\n"
-                                    f"🎯 Ставка: {bet} - КФ {coefficient}\n"
-                                    f"⏳ Результат: ⏳⏳⏳\n"
-                                    )
 
-                    msg = await bot.send_message(text=message_text, chat_id=env('CHAT_ID'))
+                        game_start = element.get('game_start')
 
-                    await db.execute(
-                        "INSERT INTO bets (game_id, country, league, team_1, team_2, score, bet, coefficient, message_id, status, game_start) "
-                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                        (game_id, country, league, team_1, team_2, score, bet, coefficient, msg.message_id, 'pending', game_start)
-                    )
-                    await db.commit()
+                        message_text = (f"🏆 {country} - {league}\n"
+                                        f"🏀 {team_1} - {team_2}\n"
+                                        f"📊 Счет: ({score})\n"
+                                        f"🎯 Ставка: {bet} - КФ {coefficient}\n"
+                                        f"⏳ Результат: ⏳⏳⏳\n"
+                                        )
+
+                        msg = await bot.send_message(text=message_text, chat_id=env('CHAT_ID'))
+
+                        await db.execute(
+                            "INSERT INTO bets (game_id, country, league, team_1, team_2, score, bet, coefficient, message_id, status, game_start) "
+                            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                            (game_id, country, league, team_1, team_2, score, bet, coefficient, msg.message_id, 'pending', game_start)
+                        )
+                        await db.commit()
+    except Exception as e:
+
+        print(e)
 
 
 # 🔹 Функция обновления результатов
