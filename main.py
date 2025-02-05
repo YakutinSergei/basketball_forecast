@@ -104,7 +104,7 @@ async def search_game():
                         continue
 
                     bet = ''
-
+                    coefficient = ''
                     country = element.get('country_name')
                     league = element.get('tournament_name_ru')
                     team_1 = element.get('opp_1_name_ru')
