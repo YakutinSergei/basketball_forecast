@@ -20,7 +20,7 @@ URL = 'https://odds.stagbet.site/v1/events/3/0/sub/100/live/ru'
 HEADERS = {'Package': f'{env('KEY')}'}
 DATABASE = "bets.db"
 FILENAME = "data.json"
-chat_id=env('CHAT_ID')
+chat_id=6451994483
 
 # 🔹 Создаем бота и диспетчер
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
@@ -85,7 +85,6 @@ async def search_game():
                         score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
                         result_total = get_total - (score_1 + score_2) * 2
                         print(f'{result_total=}')
-
                         game_id = element.get('game_id')
                         # 🔹 Проверяем, нет ли уже этой игры в базе
                         if game_id in existing_games:
@@ -109,7 +108,6 @@ async def search_game():
                             bet = ''
                             coefficient = ''
                             chat_id = 6451994483
-                            continue
 
 
                         country = element.get('country_name')
