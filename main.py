@@ -67,6 +67,8 @@ async def get_api():
 async def search_game():
     result = await get_api()
     chat_id = env('CHAT_ID')
+    await bot.send_message(text='Бот запущен', chat_id=6451994483)
+
     try:
 
         async with aiosqlite.connect(DATABASE) as db:
