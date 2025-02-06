@@ -20,7 +20,7 @@ URL = 'https://odds.stagbet.site/v1/events/3/0/sub/100/live/ru'
 HEADERS = {'Package': f'{env('KEY')}'}
 DATABASE = "bets.db"
 FILENAME = "data.json"
-chat_id=6451994483
+chat_id=env('CHAT_ID')
 
 # 🔹 Создаем бота и диспетчер
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
