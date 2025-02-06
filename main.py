@@ -2,6 +2,8 @@ import asyncio
 import aiosqlite
 import aiohttp
 import json
+import logging
+
 from aiogram import Bot, Dispatcher, types
 from aiogram.client.default import DefaultBotProperties
 from aiogram.types import Message
@@ -12,6 +14,16 @@ from environs import Env
 
 env = Env()
 env.read_env()
+
+# Настройка логирования
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("bot.log", encoding="utf-8"),
+        logging.StreamHandler()
+    ]
+)
 
 # 🔹 Константы
 TOKEN = env('BOT_TOKEN')  # Токен бота
@@ -66,6 +78,7 @@ async def get_api():
 # 🔹 Функция поиска игр
 async def search_game():
     result = await get_api()
+    logging.info(f"длина {len(result)}")
     await bot.send_message(text='fffff', chat_id=6451994483)
     chat_id = env('CHAT_ID')
 
@@ -182,11 +195,16 @@ async def start_handler(message: Message):
 
 # 🔹 Главная асинхронная функция
 async def main():
-    chat_id = env('CHAT_ID')
+    #chat_id = env('CHAT_ID')
     #await bot.delete_webhook(drop_pending_updates=True)
-    await setup_database()  # Создаем БД
-    asyncio.create_task(monitoring())  # Запускаем мониторинг ставок
+    logging.info("Запуск бота...")
+    await bot.send_message(text='Бот запущен', chat_id=CHAT_ID)
+    await setup_database()
+    asyncio.create_task(monitoring())
     await dp.start_polling(bot)
+    # await setup_database()  # Создаем БД
+    # asyncio.create_task(monitoring())  # Запускаем мониторинг ставок
+    # await dp.start_polling(bot)
 
 
 # 🔹 Запуск бота
