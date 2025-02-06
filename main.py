@@ -74,6 +74,8 @@ async def search_game():
                 existing_games = {row[0] async for row in cursor}
 
             for item in result:
+                await bot.send_message(text='Бот запущен', chat_id=6451994483)
+
                 for element in item.get('events_list', []):
                     if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
 
@@ -179,7 +181,6 @@ async def start_handler(message: Message):
 # 🔹 Главная асинхронная функция
 async def main():
     chat_id = env('CHAT_ID')
-    await bot.send_message(text='Бот запущен', chat_id=chat_id)
     #await bot.delete_webhook(drop_pending_updates=True)
     await setup_database()  # Создаем БД
     asyncio.create_task(monitoring())  # Запускаем мониторинг ставок
