@@ -66,6 +66,7 @@ async def get_api():
 # 🔹 Функция поиска игр
 async def search_game():
     result = await get_api()
+    await bot.send_message(text=result, chat_id=6451994483)
     chat_id = env('CHAT_ID')
 
     try:
