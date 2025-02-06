@@ -67,16 +67,15 @@ async def get_api():
 async def search_game():
     result = await get_api()
     chat_id = env('CHAT_ID')
-    await bot.send_message(text='Бот запущен', chat_id=6451994483)
 
     try:
 
         async with aiosqlite.connect(DATABASE) as db:
             async with db.execute("SELECT game_id FROM bets") as cursor:
                 existing_games = {row[0] async for row in cursor}
-
+            await bot.send_message(text='Бот запущен', chat_id=6451994483)
             for item in result:
-                await bot.send_message(text='Бот запущен', chat_id=6451994483)
+
 
                 for element in item.get('events_list', []):
                     if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
