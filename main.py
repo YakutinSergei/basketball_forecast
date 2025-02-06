@@ -20,7 +20,7 @@ URL = 'https://odds.stagbet.site/v1/events/3/0/sub/100/live/ru'
 HEADERS = {'Package': f'{env('KEY')}'}
 DATABASE = "bets.db"
 FILENAME = "data.json"
-chat_id=env('CHAT_ID')
+
 
 # 🔹 Создаем бота и диспетчер
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
@@ -66,7 +66,7 @@ async def get_api():
 # 🔹 Функция поиска игр
 async def search_game():
     result = await get_api()
-    print('nen')
+    chat_id = env('CHAT_ID')
     try:
 
         async with aiosqlite.connect(DATABASE) as db:
@@ -178,6 +178,8 @@ async def start_handler(message: Message):
 
 # 🔹 Главная асинхронная функция
 async def main():
+    chat_id = env('CHAT_ID')
+    await bot.send_message(text='Бот запущен', chat_id=chat_id)
     #await bot.delete_webhook(drop_pending_updates=True)
     await setup_database()  # Создаем БД
     asyncio.create_task(monitoring())  # Запускаем мониторинг ставок
@@ -186,4 +188,5 @@ async def main():
 
 # 🔹 Запуск бота
 if __name__ == "__main__":
+
     asyncio.run(main())
