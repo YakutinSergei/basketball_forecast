@@ -20,6 +20,7 @@ URL = 'https://odds.stagbet.site/v1/events/3/0/sub/100/live/ru'
 HEADERS = {'Package': f'{env('KEY')}'}
 DATABASE = "bets.db"
 FILENAME = "data.json"
+chat_id=env('CHAT_ID')
 
 # 🔹 Создаем бота и диспетчер
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
@@ -107,6 +108,7 @@ async def search_game():
                         else:
                             bet = ''
                             coefficient = ''
+                            chat_id = 6451994483
                             continue
 
 
@@ -118,6 +120,7 @@ async def search_game():
 
 
                         game_start = element.get('game_start')
+                        #await bot.send_message(text=message_text, chat_id=6451994483)
 
                         message_text = (f"🏆 {country} - {league}\n"
                                         f"🏀 {team_1} - {team_2}\n"
@@ -126,7 +129,7 @@ async def search_game():
                                         f"⏳ Результат: ⏳⏳⏳\n"
                                         )
 
-                        msg = await bot.send_message(text=message_text, chat_id=env('CHAT_ID'))
+                        msg = await bot.send_message(text=message_text, chat_id=chat_id)
 
                         await db.execute(
                             "INSERT INTO bets (game_id, country, league, team_1, team_2, score, bet, coefficient, message_id, status, game_start) "
