@@ -79,7 +79,6 @@ async def get_api():
 async def search_game():
     result = await get_api()
     logging.info(f"длина {len(result)}")
-    await bot.send_message(text='fffff', chat_id=6451994483)
     chat_id = env('CHAT_ID')
 
     try:
@@ -89,8 +88,6 @@ async def search_game():
                 existing_games = {row[0] async for row in cursor}
 
             for item in result:
-                await bot.send_message(text='Результаты', chat_id=6451994483)
-
                 for element in item.get('events_list', []):
                     if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
 
