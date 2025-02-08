@@ -41,21 +41,24 @@ dp = Dispatcher(storage=MemoryStorage())
 
 # 🔹 Функция создания базы данных
 async def setup_database():
-    async with aiosqlite.connect(DATABASE) as db:
-        await db.execute('''CREATE TABLE IF NOT EXISTS bets (
-                            id INTEGER PRIMARY KEY AUTOINCREMENT,
-                            game_id INTEGER UNIQUE,
-                            game_start INTEGER,
-                            country TEXT,
-                            league TEXT,
-                            team_1 TEXT,
-                            team_2 TEXT,
-                            score TEXT,
-                            bet TEXT,
-                            coefficient REAL,
-                            message_id INTEGER,
-                            status TEXT)''')
-        await db.commit()
+    try:
+        async with aiosqlite.connect(DATABASE) as db:
+            await db.execute('''CREATE TABLE IF NOT EXISTS bets (
+                                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                                game_id INTEGER UNIQUE,
+                                game_start INTEGER,
+                                country TEXT,
+                                league TEXT,
+                                team_1 TEXT,
+                                team_2 TEXT,
+                                score TEXT,
+                                bet TEXT,
+                                coefficient REAL,
+                                message_id INTEGER,
+                                status TEXT)''')
+            await db.commit()
+    except Exception as e:
+        logging.error(f"Ошибка при создании базы данных: {e}")
 
 
 # 🔹 Функция получения данных с API
@@ -156,32 +159,37 @@ async def search_game():
 
 # 🔹 Функция обновления результатов
 async def update_results():
-    async with aiosqlite.connect(DATABASE) as db:
-        async with db.execute("SELECT game_id, message_id FROM bets WHERE status = 'pending'") as cursor:
-            pending_bets = [(row[0], row[1]) async for row in cursor]
+    try:
+        async with aiosqlite.connect(DATABASE) as db:
+            async with db.execute("SELECT game_id, message_id FROM bets WHERE status = 'pending'") as cursor:
+                pending_bets = [(row[0], row[1]) async for row in cursor]
 
         result = await get_api()
         games = {item['game_id']: item for sublist in result for item in sublist.get('events_list', [])}
 
         for game_id, message_id in pending_bets:
             game = games.get(game_id)
-            if game:
-                final_score = game.get('score_full', '0:0')
-                if game.get('finale'):
-                    outcome = '✅✅✅' if int(final_score.split(':')[0]) + int(final_score.split(':')[1]) > 130 else '⛔⛔⛔'
-                    new_text = f"📊 Итоговый счет: ({final_score})\n🎯 Результат: {outcome}"
-                    await bot.edit_message_text(new_text, CHAT_ID, message_id)
+            if game and game.get('finale'):
+                outcome = '✅ Победа!' if int(game['score_full'].split(':')[0]) > int(game['score_full'].split(':')[1]) else '❌ Поражение'
+                new_text = f"Итог: {outcome}"
+                await bot.edit_message_text(new_text, CHAT_ID, message_id)
+                async with aiosqlite.connect(DATABASE) as db:
                     await db.execute("UPDATE bets SET status = 'closed' WHERE game_id = ?", (game_id,))
-        await db.commit()
+                    await db.commit()
+    except Exception as e:
+        logging.error(f"Ошибка в update_results: {e}")
+
 
 
 # 🔹 Основной цикл мониторинга
 async def monitoring():
-
     while True:
-        await search_game()  # Поиск игр и публикация сообщений
-        await update_results()  # Проверка результатов
-        await asyncio.sleep(60)  # Повторяем через 60 секунд
+        try:
+            await search_game()
+            await update_results()
+            await asyncio.sleep(60)
+        except Exception as e:
+            logging.error(f"Ошибка в monitoring: {e}")
 
 
 # 🔹 Обработчик команды /start (чтобы бот не падал в aiogram 3.x)
