@@ -119,7 +119,7 @@ async def search_game():
                         team_1 = element.get('opp_1_name_ru')
                         team_2 = element.get('opp_2_name_ru')
                         score = element.get('score_period')
-                       
+
                         if result_total > 16.5:
                             for total in element.get('game_oc_list', []):
                                 if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'М':
