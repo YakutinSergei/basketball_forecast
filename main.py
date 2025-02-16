@@ -143,8 +143,8 @@ async def search_game():
                         time_1 = score.split(';')[0]
                         time_2 = score.split(';')[1]
 
-                        sum_cont_1 = time_1.split(':')[0] + time_2.split(':')[0]
-                        sum_cont_2 = time_1.split(':')[1] + time_2.split(':')[1]
+                        sum_cont_1 = int(time_1.split(':')[0]) + int(time_2.split(':')[0])
+                        sum_cont_2 = int(time_1.split(':')[1]) + int(time_2.split(':')[1])
                         message_text = (f"🏆 {country} - {league}\n"
                                         f"🏀 {team_1} - {team_2}\n"
                                         f"📊 Счет: {sum_cont_1}:{sum_cont_2} ({score})\n"
