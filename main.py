@@ -3,6 +3,7 @@ import aiosqlite
 import aiohttp
 import json
 import logging
+import re
 
 from aiogram import Bot, Dispatcher, types
 from aiogram.client.default import DefaultBotProperties
@@ -84,6 +85,7 @@ async def search_game():
     logging.info(f"длина {len(result)}")
     chat_id = env('CHAT_ID')
 
+
     try:
 
         async with aiosqlite.connect(DATABASE) as db:
@@ -101,20 +103,17 @@ async def search_game():
 
                         score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
                         result_total = get_total - (score_1 + score_2) * 2
-                        print(f'{result_total=}')
                         game_id = element.get('game_id')
                         # 🔹 Проверяем, нет ли уже этой игры в базе
                         if game_id in existing_games:
                             continue
+                        country = element.get('country_name')
+                        league = element.get('tournament_name_ru')
+                        team_1 = element.get('opp_1_name_ru')
+                        team_2 = element.get('opp_2_name_ru')
+                        score = element.get('score_period')
 
-                        if result_total < -18.5:
-                            for total in element.get('game_oc_list', []):
-                                if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'Б':
-                                    coefficient = total.get("oc_rate")
-                                    get_total = float(total['oc_name'].replace('Б', ''))
-                                    bet = f'ТБ{get_total}'
-                                    print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
-                        elif result_total > 18.5:
+                        if result_total > 16.5 or contains_forbidden_word(league):
                             for total in element.get('game_oc_list', []):
                                 if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'М':
                                     coefficient = total.get("oc_rate")
@@ -122,16 +121,13 @@ async def search_game():
                                     bet = f'ТМ{get_total}'
                                     print(f'{total.get("oc_name")}, {total.get("oc_rate")}')
                         else:
-                            bet = ''
-                            coefficient = ''
+                            bet = (f'{get_total} \n'
+                                   f'Разница {result_total}')
+                            coefficient = total.get("oc_rate")
                             chat_id = 6451994483
 
 
-                        country = element.get('country_name')
-                        league = element.get('tournament_name_ru')
-                        team_1 = element.get('opp_1_name_ru')
-                        team_2 = element.get('opp_2_name_ru')
-                        score = element.get('score_period')
+
 
 
                         game_start = element.get('game_start')
@@ -216,3 +212,9 @@ async def main():
 if __name__ == "__main__":
 
     asyncio.run(main())
+
+
+def contains_forbidden_word(sentence):
+    report_list = ['IPBL', 'Альтернативные матчи', 'eSports', '2K24', '2K25', '2K26', '2K27']
+    words_in_sentence = set(re.findall(r'\b\w+\b', sentence))  # Извлекаем отдельные слова
+    return any(word in words_in_sentence for word in report_list)
