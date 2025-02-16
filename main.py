@@ -40,6 +40,11 @@ bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
 dp = Dispatcher(storage=MemoryStorage())
 
 
+def contains_forbidden_word(sentence):
+    report_list = ['IPBL', 'Альтернативные матчи', 'eSports', '2K24', '2K25', '2K26', '2K27']
+    words_in_sentence = set(re.findall(r'\b\w+\b', sentence))  # Извлекаем отдельные слова
+    return any(word in words_in_sentence for word in report_list)
+
 # 🔹 Функция создания базы данных
 async def setup_database():
     try:
@@ -107,13 +112,14 @@ async def search_game():
                         # 🔹 Проверяем, нет ли уже этой игры в базе
                         if game_id in existing_games:
                             continue
+
                         country = element.get('country_name')
                         league = element.get('tournament_name_ru')
                         team_1 = element.get('opp_1_name_ru')
                         team_2 = element.get('opp_2_name_ru')
                         score = element.get('score_period')
 
-                        if result_total > 16.5 or contains_forbidden_word(league):
+                        if result_total > 16.5 and contains_forbidden_word(league):
                             for total in element.get('game_oc_list', []):
                                 if total.get('oc_group_name') == 'Тотал' and total.get("oc_name").split(' ')[-1] == 'М':
                                     coefficient = total.get("oc_rate")
@@ -150,7 +156,7 @@ async def search_game():
                         await db.commit()
     except Exception as e:
 
-        print(e)
+        print(f'я тут {e}')
 
 
 # 🔹 Функция обновления результатов
@@ -213,8 +219,3 @@ if __name__ == "__main__":
 
     asyncio.run(main())
 
-
-def contains_forbidden_word(sentence):
-    report_list = ['IPBL', 'Альтернативные матчи', 'eSports', '2K24', '2K25', '2K26', '2K27']
-    words_in_sentence = set(re.findall(r'\b\w+\b', sentence))  # Извлекаем отдельные слова
-    return any(word in words_in_sentence for word in report_list)
