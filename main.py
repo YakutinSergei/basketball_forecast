@@ -1,4 +1,6 @@
 import asyncio
+import traceback
+
 import aiosqlite
 import aiohttp
 import json
@@ -129,7 +131,7 @@ async def search_game():
                         else:
                             bet = (f'{get_total} \n'
                                    f'Разница {result_total}')
-                            coefficient = total.get("oc_rate")
+                            coefficient = ''
                             chat_id = 6451994483
 
 
@@ -138,10 +140,14 @@ async def search_game():
 
                         game_start = element.get('game_start')
                         #await bot.send_message(text=message_text, chat_id=6451994483)
+                        time_1 = score.split(';')[0]
+                        time_2 = score.split(';')[1]
 
+                        sum_cont_1 = time_1.split(':')[0] + time_2.split(':')[0]
+                        sum_cont_2 = time_1.split(':')[1] + time_2.split(':')[1]
                         message_text = (f"🏆 {country} - {league}\n"
                                         f"🏀 {team_1} - {team_2}\n"
-                                        f"📊 Счет: ({score})\n"
+                                        f"📊 Счет: {sum_cont_1}:{sum_cont_2} ({score})\n"
                                         f"🎯 Ставка: {bet} - КФ {coefficient}\n"
                                         f"⏳ Результат: ⏳⏳⏳\n"
                                         )
@@ -155,8 +161,10 @@ async def search_game():
                         )
                         await db.commit()
     except Exception as e:
-
-        print(f'я тут {e}')
+        print('Ошибка!!!')
+        tb = traceback.extract_tb(e.__traceback__)  # Получаем информацию об ошибке
+        filename, lineno, func, text = tb[-1]  #
+        print(filename, lineno, func, text)
 
 
 # 🔹 Функция обновления результатов
