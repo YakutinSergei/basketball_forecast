@@ -13,7 +13,6 @@ from aiogram.types import Message
 from aiogram.fsm.storage.memory import MemoryStorage, SimpleEventIsolation
 from environs import Env
 
-
 env = Env()
 env.read_env()
 
@@ -35,7 +34,6 @@ HEADERS = {'Package': f'{env('KEY')}'}
 DATABASE = "bets.db"
 FILENAME = "data.json"
 
-
 # 🔹 Создаем бота и диспетчер
 bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
 dp = Dispatcher(storage=MemoryStorage())
@@ -45,6 +43,7 @@ def contains_forbidden_word(sentence):
     report_list = ['IPBL', 'Альтернативные матчи', 'eSports', '2K24', '2K25', '2K26', '2K27']
     words_in_sentence = set(re.findall(r'\b\w+\b', sentence))  # Извлекаем отдельные слова
     return any(word in words_in_sentence for word in report_list)
+
 
 # 🔹 Функция создания базы данных
 async def setup_database():
@@ -91,7 +90,6 @@ async def search_game():
     logging.info(f"длина {len(result)}")
     chat_id = env('CHAT_ID')
 
-
     try:
 
         async with aiosqlite.connect(DATABASE) as db:
@@ -102,18 +100,19 @@ async def search_game():
                 for element in item.get('events_list', []):
                     if element.get('timer') in [1200, 1440] and element.get('period_name') == '3 Четверть':
 
-                        # Поиск тотала среди коэффициентов 
+                        game_id = element.get('game_id')
+                        # 🔹 Проверяем, нет ли уже этой игры в базе
+                        if game_id in existing_games:
+                            continue
+
+                        # Поиск тотала среди коэффициентов
+
                         for search_total in element.get('game_oc_list', []):
                             if search_total.get('oc_group_name') == 'Тотал' and 'М' in search_total.get('oc_name', ''):
                                 get_total = float(search_total['oc_name'].replace('М', ''))
 
                         score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
                         result_total = get_total - (score_1 + score_2) * 2
-                        game_id = element.get('game_id')
-                        # 🔹 Проверяем, нет ли уже этой игры в базе
-                        if game_id in existing_games:
-                            continue
-
                         country = element.get('country_name')
                         league = element.get('tournament_name_ru')
                         team_1 = element.get('opp_1_name_ru')
@@ -133,12 +132,8 @@ async def search_game():
                             coefficient = ''
                             chat_id = 6451994483
 
-
-
-
-
                         game_start = element.get('game_start')
-                        #await bot.send_message(text=message_text, chat_id=6451994483)
+                        # await bot.send_message(text=message_text, chat_id=6451994483)
                         time_1 = score.split(';')[0]
                         time_2 = score.split(';')[1]
 
@@ -156,7 +151,8 @@ async def search_game():
                         await db.execute(
                             "INSERT INTO bets (game_id, country, league, team_1, team_2, score, bet, coefficient, message_id, status, game_start) "
                             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                            (game_id, country, league, team_1, team_2, score, bet, coefficient, msg.message_id, 'pending', game_start)
+                            (game_id, country, league, team_1, team_2, score, bet, coefficient, msg.message_id,
+                             'pending', game_start)
                         )
                         await db.commit()
     except Exception as e:
@@ -179,7 +175,8 @@ async def update_results():
         for game_id, message_id in pending_bets:
             game = games.get(game_id)
             if game and game.get('finale'):
-                outcome = '✅ Победа!' if int(game['score_full'].split(':')[0]) > int(game['score_full'].split(':')[1]) else '❌ Поражение'
+                outcome = '✅ Победа!' if int(game['score_full'].split(':')[0]) > int(
+                    game['score_full'].split(':')[1]) else '❌ Поражение'
                 new_text = f"Итог: {outcome}"
                 await bot.edit_message_text(new_text, CHAT_ID, message_id)
                 async with aiosqlite.connect(DATABASE) as db:
@@ -187,7 +184,6 @@ async def update_results():
                     await db.commit()
     except Exception as e:
         logging.error(f"Ошибка в update_results: {e}")
-
 
 
 # 🔹 Основной цикл мониторинга
@@ -209,8 +205,8 @@ async def start_handler(message: Message):
 
 # 🔹 Главная асинхронная функция
 async def main():
-    #chat_id = env('CHAT_ID')
-    #await bot.delete_webhook(drop_pending_updates=True)
+    # chat_id = env('CHAT_ID')
+    # await bot.delete_webhook(drop_pending_updates=True)
     logging.info("Запуск бота...")
     await bot.send_message(text='Бот запущен', chat_id=CHAT_ID)
     await setup_database()
@@ -223,6 +219,4 @@ async def main():
 
 # 🔹 Запуск бота
 if __name__ == "__main__":
-
     asyncio.run(main())
-
