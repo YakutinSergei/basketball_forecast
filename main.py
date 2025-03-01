@@ -87,6 +87,7 @@ async def get_api():
 # 🔹 Функция поиска игр
 async def search_game():
     result = await get_api()
+    print(f'{result=}')
     logging.info(f"длина {len(result)}")
     chat_id = env('CHAT_ID')
 
@@ -112,6 +113,7 @@ async def search_game():
                                 get_total = float(search_total['oc_name'].replace('М', ''))
 
                         score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
+                        print(get_total, score_1, score_2)
                         result_total = get_total - (score_1 + score_2) * 2
                         country = element.get('country_name')
                         league = element.get('tournament_name_ru')
