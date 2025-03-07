@@ -13,6 +13,8 @@ from aiogram.types import Message
 from aiogram.fsm.storage.memory import MemoryStorage, SimpleEventIsolation
 from environs import Env
 
+from rezult import get_rezult
+
 env = Env()
 env.read_env()
 
@@ -87,7 +89,6 @@ async def get_api():
 # 🔹 Функция поиска игр
 async def search_game():
     result = await get_api()
-    print(f'{result=}')
     logging.info(f"длина {len(result)}")
     chat_id = env('CHAT_ID')
 
@@ -105,15 +106,16 @@ async def search_game():
                         # 🔹 Проверяем, нет ли уже этой игры в базе
                         if game_id in existing_games:
                             continue
-
                         # Поиск тотала среди коэффициентов
-
+                        get_total = 0
                         for search_total in element.get('game_oc_list', []):
                             if search_total.get('oc_group_name') == 'Тотал' and 'М' in search_total.get('oc_name', ''):
                                 get_total = float(search_total['oc_name'].replace('М', ''))
 
                         score_1, score_2 = map(int, element.get('score_full', '0:0').split(':'))
+
                         print(get_total, score_1, score_2)
+
                         result_total = get_total - (score_1 + score_2) * 2
                         country = element.get('country_name')
                         league = element.get('tournament_name_ru')
@@ -193,7 +195,8 @@ async def monitoring():
     while True:
         try:
             await search_game()
-            await update_results()
+            #await update_results()
+            await get_rezult()
             await asyncio.sleep(60)
         except Exception as e:
             logging.error(f"Ошибка в monitoring: {e}")
@@ -207,17 +210,12 @@ async def start_handler(message: Message):
 
 # 🔹 Главная асинхронная функция
 async def main():
-    # chat_id = env('CHAT_ID')
-    # await bot.delete_webhook(drop_pending_updates=True)
+
     logging.info("Запуск бота...")
-    await bot.send_message(text='Бот запущен', chat_id=CHAT_ID)
+    #await bot.send_message(text='Бот запущен', chat_id=CHAT_ID)
     await setup_database()
     asyncio.create_task(monitoring())
     await dp.start_polling(bot)
-    # await setup_database()  # Создаем БД
-    # asyncio.create_task(monitoring())  # Запускаем мониторинг ставок
-    # await dp.start_polling(bot)
-
 
 # 🔹 Запуск бота
 if __name__ == "__main__":

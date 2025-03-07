@@ -3,10 +3,11 @@ import aiohttp
 import json
 # URL API, с которого получаем данные
 URL = 'https://odds.stagbet.site/v1/events/3/0/sub/100/live/ru'
-#URL = 'https://odds.stagbet.site/v1/rez/getsports/ru/0'
+URL = 'https://rez.odds24.online/v1/rez/getgame/en/1738839600/594669768'
 
+key_rez = 'Ilgiz3rez8c9rJ8S6x33veRfB4J7s'
 HEADERS = {
-    'Package': 'Ilgiz12yvO71nYehsWkc23JgdobL'
+    'Package': key_rez
 }
 
 # Глобальный список для хранения информации об играх

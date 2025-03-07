@@ -1,5 +1,3979 @@
 {
-    "status": 99,
+    "status": 1,
     "page": "/v1/events",
-    "body": "Your package life has expired!"
+    "body": [
+        {
+            "tournament_id": 2804485,
+            "tournament_name": "NBA 2K25. Cyber League",
+            "events_list": [
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": null,
+                    "game_id": 601534010,
+                    "game_mid": 601534010,
+                    "game_num": 195103,
+                    "game_dop_name": "№5,с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "№5,с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741057200,
+                    "game_oc_counter": 0,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2804485,
+                    "tournament_name": "NBA 2K25. Cyber League",
+                    "tournament_name_ru": "NBA 2K25. Cyber League",
+                    "tournament_name_en": "NBA 2K25. Cyber League",
+                    "opp_1_name": "New Orleans Pelicans (cyber)",
+                    "opp_2_name": "Minnesota Timberwolves (cyber)",
+                    "opp_1_name_ru": "New Orleans Pelicans (cyber)",
+                    "opp_2_name_ru": "Minnesota Timberwolves (cyber)",
+                    "opp_1_name_en": "New Orleans Pelicans (cyber)",
+                    "opp_2_name_en": "Minnesota Timberwolves (cyber)",
+                    "opp_1_id": 3668645,
+                    "opp_1_ids": [
+                        3668645
+                    ],
+                    "opp_2_id": 3667765,
+                    "opp_2_ids": [
+                        3667765
+                    ],
+                    "opp_1_icon": "141c6cc0646ea20d559e77df0e0139d1.png",
+                    "opp_2_icon": "be4f98031e1ca8078e40f722f08fd618.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "91:96",
+                    "score_extra": "0:0",
+                    "score_period": "21:24;24:19;22:26;24:27",
+                    "period_name": "4 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 2876,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": true,
+                    "game_desk": "",
+                    "game_oc_list": []
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": null,
+                    "game_id": 601538243,
+                    "game_mid": 601538243,
+                    "game_num": 225713,
+                    "game_dop_name": "№6,с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "№6,с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741059600,
+                    "game_oc_counter": 79,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2804485,
+                    "tournament_name": "NBA 2K25. Cyber League",
+                    "tournament_name_ru": "NBA 2K25. Cyber League",
+                    "tournament_name_en": "NBA 2K25. Cyber League",
+                    "opp_1_name": "Denver Nuggets (cyber)",
+                    "opp_2_name": "Memphis Grizzlies (cyber)",
+                    "opp_1_name_ru": "Denver Nuggets (cyber)",
+                    "opp_2_name_ru": "Memphis Grizzlies (cyber)",
+                    "opp_1_name_en": "Denver Nuggets (cyber)",
+                    "opp_2_name_en": "Memphis Grizzlies (cyber)",
+                    "opp_1_id": 3668289,
+                    "opp_1_ids": [
+                        3668289
+                    ],
+                    "opp_2_id": 3667957,
+                    "opp_2_ids": [
+                        3667957
+                    ],
+                    "opp_1_icon": "b5aa0308dd4363834cbb6c4ccfb27a14.png",
+                    "opp_2_icon": "90c727c59f05bc517ce321b1ffca7cb6.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "75:72",
+                    "score_extra": "0:0",
+                    "score_period": "26:23;21:18;28:31",
+                    "period_name": "3 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 2135,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.995,
+                            "oc_pointer": "601538243|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.815,
+                            "oc_pointer": "601538243|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "200.5 М",
+                            "oc_rate": 1.975,
+                            "oc_pointer": "601538243|17|10|200.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "200.5 Б",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601538243|17|9|200.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "100.5 М",
+                            "oc_rate": 1.99,
+                            "oc_pointer": "601538243|15|12|100.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "100.5 Б",
+                            "oc_rate": 1.82,
+                            "oc_pointer": "601538243|15|11|100.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "100.5 М",
+                            "oc_rate": 1.99,
+                            "oc_pointer": "601538243|62|14|100.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "100.5 Б",
+                            "oc_rate": 1.82,
+                            "oc_pointer": "601538243|62|13|100.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+1.5)",
+                            "oc_rate": 1.995,
+                            "oc_pointer": "601538243|2|7|1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-1.5)",
+                            "oc_rate": 1.815,
+                            "oc_pointer": "601538243|2|8|-1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 2.016,
+                            "oc_pointer": "601538243|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 1.89,
+                            "oc_pointer": "601538243|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 20,
+                            "oc_pointer": "601538243|2766|3654|0",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": null,
+                    "game_id": 601542519,
+                    "game_mid": 601542519,
+                    "game_num": 230252,
+                    "game_dop_name": "№7,с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "№7,с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062000,
+                    "game_oc_counter": 108,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2804485,
+                    "tournament_name": "NBA 2K25. Cyber League",
+                    "tournament_name_ru": "NBA 2K25. Cyber League",
+                    "tournament_name_en": "NBA 2K25. Cyber League",
+                    "opp_1_name": "Los Angeles Lakers (cyber)",
+                    "opp_2_name": "Phoenix Suns (cyber)",
+                    "opp_1_name_ru": "Los Angeles Lakers (cyber)",
+                    "opp_2_name_ru": "Phoenix Suns (cyber)",
+                    "opp_1_name_en": "Los Angeles Lakers (cyber)",
+                    "opp_2_name_en": "Phoenix Suns (cyber)",
+                    "opp_1_id": 3666969,
+                    "opp_1_ids": [
+                        3666969
+                    ],
+                    "opp_2_id": 3669097,
+                    "opp_2_ids": [
+                        3669097
+                    ],
+                    "opp_1_icon": "444cff9427d47e4b7b8e4ec988b2c2ef.png",
+                    "opp_2_icon": "07c59f69d300e3b03f65e135defa1b54.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "25:25",
+                    "score_extra": "0:0",
+                    "score_period": "25:25",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 720,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.785,
+                            "oc_pointer": "601542519|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 2.03,
+                            "oc_pointer": "601542519|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "221.5 М",
+                            "oc_rate": 1.888,
+                            "oc_pointer": "601542519|17|10|221.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "221.5 Б",
+                            "oc_rate": 1.912,
+                            "oc_pointer": "601542519|17|9|221.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "111.5 М",
+                            "oc_rate": 1.895,
+                            "oc_pointer": "601542519|15|12|111.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "111.5 Б",
+                            "oc_rate": 1.905,
+                            "oc_pointer": "601542519|15|11|111.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "110.5 М",
+                            "oc_rate": 1.93,
+                            "oc_pointer": "601542519|62|14|110.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "110.5 Б",
+                            "oc_rate": 1.87,
+                            "oc_pointer": "601542519|62|13|110.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-1.5)",
+                            "oc_rate": 1.825,
+                            "oc_pointer": "601542519|2|7|-1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+1.5)",
+                            "oc_rate": 1.98,
+                            "oc_pointer": "601542519|2|8|1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.93,
+                            "oc_pointer": "601542519|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 2.184,
+                            "oc_pointer": "601542519|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 10,
+                            "oc_pointer": "601542519|2766|3654|0",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 124789,
+            "tournament_name": "NCAA",
+            "events_list": [
+                {
+                    "sgame_id": "66e4029e0d8c0bfbf1d6187e",
+                    "stat_id": "66a9d1670d8c0bfbf13edf99",
+                    "ext_game_id": 0,
+                    "game_id": 601535102,
+                    "game_mid": 601535102,
+                    "game_num": 238321,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741057200,
+                    "game_oc_counter": 50,
+                    "country_id": 153,
+                    "country_name": "США",
+                    "tournament_id": 124789,
+                    "tournament_name": "NCAA",
+                    "tournament_name_ru": "NCAA",
+                    "tournament_name_en": "National Collegiate Athletic Association (NCAA)",
+                    "opp_1_name": "Портленд Стейт",
+                    "opp_2_name": "Сакраменто Стейт Хорнетс",
+                    "opp_1_name_ru": "Портленд Стейт",
+                    "opp_2_name_ru": "Сакраменто Стейт Хорнетс",
+                    "opp_1_name_en": "Portland State",
+                    "opp_2_name_en": "Sacramento State Hornets",
+                    "opp_1_id": 128935,
+                    "opp_1_ids": [
+                        128935
+                    ],
+                    "opp_2_id": 7250,
+                    "opp_2_ids": [
+                        7250
+                    ],
+                    "opp_1_icon": "6f11cfb3ebe4ea9922380d8a0ee5286d.png",
+                    "opp_2_icon": "7250.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "49:43",
+                    "score_extra": "0:0",
+                    "score_period": ";34:35;15:8",
+                    "period_name": "12 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 1925,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "2x20",
+                    "finale": false,
+                    "game_desk": "1-я половина",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-8.5)",
+                            "oc_rate": 1.79,
+                            "oc_pointer": "601535102|2|7|-8.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+8.5)",
+                            "oc_rate": 1.955,
+                            "oc_pointer": "601535102|2|8|8.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "121.5 Б",
+                            "oc_rate": 1.79,
+                            "oc_pointer": "601535102|17|9|121.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "121.5 М",
+                            "oc_rate": 1.955,
+                            "oc_pointer": "601535102|17|10|121.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "65.5 Б",
+                            "oc_rate": 1.91,
+                            "oc_pointer": "601535102|15|11|65.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "65.5 М",
+                            "oc_rate": 1.81,
+                            "oc_pointer": "601535102|15|12|65.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "56.5 Б",
+                            "oc_rate": 1.784,
+                            "oc_pointer": "601535102|62|13|56.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "56.5 М",
+                            "oc_rate": 1.944,
+                            "oc_pointer": "601535102|62|14|56.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.03,
+                            "oc_pointer": "601535102|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 9.98,
+                            "oc_pointer": "601535102|101|402|0",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": "66e2b1010d8c0bfbf15ea806",
+                    "stat_id": "66a9d1670d8c0bfbf13edf99",
+                    "ext_game_id": 15559028,
+                    "game_id": 601541389,
+                    "game_mid": 601541389,
+                    "game_num": 238389,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741060800,
+                    "game_oc_counter": 46,
+                    "country_id": 153,
+                    "country_name": "США",
+                    "tournament_id": 124789,
+                    "tournament_name": "NCAA",
+                    "tournament_name_ru": "NCAA",
+                    "tournament_name_en": "National Collegiate Athletic Association (NCAA)",
+                    "opp_1_name": "Монтана Гризлиз",
+                    "opp_2_name": "Восточный Вашингтон Иглз",
+                    "opp_1_name_ru": "Монтана Гризлиз",
+                    "opp_2_name_ru": "Восточный Вашингтон Иглз",
+                    "opp_1_name_en": "Montana Grizzlies",
+                    "opp_2_name_en": "Eastern Washington Eagles",
+                    "opp_1_id": 7238,
+                    "opp_1_ids": [
+                        7238
+                    ],
+                    "opp_2_id": 7234,
+                    "opp_2_ids": [
+                        7234
+                    ],
+                    "opp_1_icon": "7238.png",
+                    "opp_2_icon": "258fe415287c42b80472b96d492215ba.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "22:29",
+                    "score_extra": "0:0",
+                    "score_period": ";22:29",
+                    "period_name": "11 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 945,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "2x20",
+                    "finale": false,
+                    "game_desk": "1-я половина",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-3.5)",
+                            "oc_rate": 1.82,
+                            "oc_pointer": "601541389|2|7|-3.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+3.5)",
+                            "oc_rate": 1.92,
+                            "oc_pointer": "601541389|2|8|3.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "145.5 Б",
+                            "oc_rate": 1.87,
+                            "oc_pointer": "601541389|17|9|145.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "145.5 М",
+                            "oc_rate": 1.87,
+                            "oc_pointer": "601541389|17|10|145.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "74.5 Б",
+                            "oc_rate": 1.88,
+                            "oc_pointer": "601541389|15|11|74.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "74.5 М",
+                            "oc_rate": 1.84,
+                            "oc_pointer": "601541389|15|12|74.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "71.5 Б",
+                            "oc_rate": 1.91,
+                            "oc_pointer": "601541389|62|13|71.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "71.5 М",
+                            "oc_rate": 1.81,
+                            "oc_pointer": "601541389|62|14|71.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.44,
+                            "oc_pointer": "601541389|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 2.67,
+                            "oc_pointer": "601541389|101|402|0",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2715996,
+            "tournament_name": "NBA 2K24. Cyber Euro League",
+            "events_list": [
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": null,
+                    "game_id": 601537599,
+                    "game_mid": 601537599,
+                    "game_num": 221914,
+                    "game_dop_name": "№8,с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "№8,с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741059300,
+                    "game_oc_counter": 47,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2715996,
+                    "tournament_name": "NBA 2K24. Cyber Euro League",
+                    "tournament_name_ru": "NBA 2K24. Cyber Euro League",
+                    "tournament_name_en": "NBA 2K24. Cyber Euro League",
+                    "opp_1_name": "Olympiacos SFP Pireus (cyber)",
+                    "opp_2_name": "Panathinaikos (cyber)",
+                    "opp_1_name_ru": "Olympiacos SFP Pireus (cyber)",
+                    "opp_2_name_ru": "Panathinaikos (cyber)",
+                    "opp_1_name_en": "Olympiacos SFP Pireus (cyber)",
+                    "opp_2_name_en": "Panathinaikos (cyber)",
+                    "opp_1_id": 3736401,
+                    "opp_1_ids": [
+                        3736401
+                    ],
+                    "opp_2_id": 3736513,
+                    "opp_2_ids": [
+                        3736513
+                    ],
+                    "opp_1_icon": "9f289207e3bc120f92ce34b5a26f2b6e.png",
+                    "opp_2_icon": "fc86bf73a8dc32bc02f5e00cf4a5d6ee.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "66:64",
+                    "score_extra": "0:0",
+                    "score_period": "11:17;16:12;22:21;17:14",
+                    "period_name": "4 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 2220,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4х10",
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.68,
+                            "oc_pointer": "601537599|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 2.085,
+                            "oc_pointer": "601537599|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "144.5 М",
+                            "oc_rate": 1.725,
+                            "oc_pointer": "601537599|17|10|144.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "144.5 Б",
+                            "oc_rate": 2.02,
+                            "oc_pointer": "601537599|17|9|144.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "73.5 М",
+                            "oc_rate": 1.784,
+                            "oc_pointer": "601537599|15|12|73.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "73.5 Б",
+                            "oc_rate": 2.032,
+                            "oc_pointer": "601537599|15|11|73.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "71.5 М",
+                            "oc_rate": 1.98,
+                            "oc_pointer": "601537599|62|14|71.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "71.5 Б",
+                            "oc_rate": 1.825,
+                            "oc_pointer": "601537599|62|13|71.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-1.5)",
+                            "oc_rate": 1.84,
+                            "oc_pointer": "601537599|2|7|-1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+1.5)",
+                            "oc_rate": 1.965,
+                            "oc_pointer": "601537599|2|8|1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.94,
+                            "oc_pointer": "601537599|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 2.32,
+                            "oc_pointer": "601537599|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 7.67,
+                            "oc_pointer": "601537599|2766|3654|0",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": null,
+                    "game_id": 601540787,
+                    "game_mid": 601540787,
+                    "game_num": 229842,
+                    "game_dop_name": "№9,с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "№9,с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741061100,
+                    "game_oc_counter": 82,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2715996,
+                    "tournament_name": "NBA 2K24. Cyber Euro League",
+                    "tournament_name_ru": "NBA 2K24. Cyber Euro League",
+                    "tournament_name_en": "NBA 2K24. Cyber Euro League",
+                    "opp_1_name": "Barcelona (cyber)",
+                    "opp_2_name": "Real Madrid (cyber)",
+                    "opp_1_name_ru": "Barcelona (cyber)",
+                    "opp_2_name_ru": "Real Madrid (cyber)",
+                    "opp_1_name_en": "Barcelona (cyber)",
+                    "opp_2_name_en": "Real Madrid (cyber)",
+                    "opp_1_id": 3736377,
+                    "opp_1_ids": [
+                        3736377
+                    ],
+                    "opp_2_id": 3736735,
+                    "opp_2_ids": [
+                        3736735
+                    ],
+                    "opp_1_icon": "97846a2a82898d1d2d4cf565cb24c896.png",
+                    "opp_2_icon": "32e056cf7070186d109905e20d149b0a.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "41:39",
+                    "score_extra": "0:0",
+                    "score_period": "19:16;16:20;6:3",
+                    "period_name": "3 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 1391,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4х10",
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.97,
+                            "oc_pointer": "601540787|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.832,
+                            "oc_pointer": "601540787|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "142.5 М",
+                            "oc_rate": 1.904,
+                            "oc_pointer": "601540787|17|10|142.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "142.5 Б",
+                            "oc_rate": 1.896,
+                            "oc_pointer": "601540787|17|9|142.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "71.5 М",
+                            "oc_rate": 1.925,
+                            "oc_pointer": "601540787|15|12|71.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "71.5 Б",
+                            "oc_rate": 1.875,
+                            "oc_pointer": "601540787|15|11|71.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "72.5 М",
+                            "oc_rate": 1.84,
+                            "oc_pointer": "601540787|62|14|72.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "72.5 Б",
+                            "oc_rate": 1.96,
+                            "oc_pointer": "601540787|62|13|72.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+1.5)",
+                            "oc_rate": 1.9,
+                            "oc_pointer": "601540787|2|7|1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-1.5)",
+                            "oc_rate": 1.9,
+                            "oc_pointer": "601540787|2|8|-1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 2.03,
+                            "oc_pointer": "601540787|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 1.955,
+                            "oc_pointer": "601540787|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 15,
+                            "oc_pointer": "601540787|2766|3654|0",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": null,
+                    "game_id": 601544104,
+                    "game_mid": 601544104,
+                    "game_num": 154047,
+                    "game_dop_name": "№10,с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "№10,с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062900,
+                    "game_oc_counter": 134,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2715996,
+                    "tournament_name": "NBA 2K24. Cyber Euro League",
+                    "tournament_name_ru": "NBA 2K24. Cyber Euro League",
+                    "tournament_name_en": "NBA 2K24. Cyber Euro League",
+                    "opp_1_name": "Olimpia (cyber)",
+                    "opp_2_name": "Maccabi (cyber)",
+                    "opp_1_name_ru": "Olimpia (cyber)",
+                    "opp_2_name_ru": "Maccabi (cyber)",
+                    "opp_1_name_en": "Olimpia (cyber)",
+                    "opp_2_name_en": "Maccabi (cyber)",
+                    "opp_1_id": 6635687,
+                    "opp_1_ids": [
+                        6635687
+                    ],
+                    "opp_2_id": 6635681,
+                    "opp_2_ids": [
+                        6635681
+                    ],
+                    "opp_1_icon": "f9f3f78e489c4259bfb01799bb63ef7a.png",
+                    "opp_2_icon": "f83eae9fadb04eefa05d087668e3e076.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "9:5",
+                    "score_extra": "0:0",
+                    "score_period": "9:5",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 210,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4х10",
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.86,
+                            "oc_pointer": "601544104|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.944,
+                            "oc_pointer": "601544104|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "143.5 М",
+                            "oc_rate": 1.865,
+                            "oc_pointer": "601544104|17|10|143.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "143.5 Б",
+                            "oc_rate": 1.936,
+                            "oc_pointer": "601544104|17|9|143.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "71.5 М",
+                            "oc_rate": 1.89,
+                            "oc_pointer": "601544104|15|12|71.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "71.5 Б",
+                            "oc_rate": 1.91,
+                            "oc_pointer": "601544104|15|11|71.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "72.5 М",
+                            "oc_rate": 1.944,
+                            "oc_pointer": "601544104|62|14|72.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "72.5 Б",
+                            "oc_rate": 1.856,
+                            "oc_pointer": "601544104|62|13|72.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-1.5)",
+                            "oc_rate": 1.93,
+                            "oc_pointer": "601544104|2|7|-1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+1.5)",
+                            "oc_rate": 1.87,
+                            "oc_pointer": "601544104|2|8|1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.93,
+                            "oc_pointer": "601544104|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 2.005,
+                            "oc_pointer": "601544104|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 18,
+                            "oc_pointer": "601544104|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа по четвертям",
+                            "oc_name": "П1",
+                            "oc_rate": 2.9,
+                            "oc_pointer": "601544104|2250|2466|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа по четвертям",
+                            "oc_name": "П2",
+                            "oc_rate": 2.88,
+                            "oc_pointer": "601544104|2250|2467|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа по четвертям",
+                            "oc_name": "X",
+                            "oc_rate": 2.53,
+                            "oc_pointer": "601544104|2250|2468|0",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2626462,
+            "tournament_name": "NBA 2K24. Cyber League",
+            "events_list": [
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": null,
+                    "game_id": 601538202,
+                    "game_mid": 601538202,
+                    "game_num": 222090,
+                    "game_dop_name": "№6,с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "№6,с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741059600,
+                    "game_oc_counter": 49,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2626462,
+                    "tournament_name": "NBA 2K24. Cyber League",
+                    "tournament_name_ru": "NBA 2K24. Cyber League",
+                    "tournament_name_en": "NBA 2K24. Cyber League",
+                    "opp_1_name": "Brooklyn Nets (cyber)",
+                    "opp_2_name": "Philadelphia 76ers (cyber)",
+                    "opp_1_name_ru": "Brooklyn Nets (cyber)",
+                    "opp_2_name_ru": "Philadelphia 76ers (cyber)",
+                    "opp_1_name_en": "Brooklyn Nets (cyber)",
+                    "opp_2_name_en": "Philadelphia 76ers (cyber)",
+                    "opp_1_id": 3667879,
+                    "opp_1_ids": [
+                        3667879
+                    ],
+                    "opp_2_id": 3668773,
+                    "opp_2_ids": [
+                        3668773
+                    ],
+                    "opp_1_icon": "e6ee326ee088ecce1ef050be82f1837c.png",
+                    "opp_2_icon": "689fc85875615f664a19965ba1d64f54.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "58:72",
+                    "score_extra": "0:0",
+                    "score_period": "16:24;25:29;17:19",
+                    "period_name": "3 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 1914,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "192.5 М",
+                            "oc_rate": 1.915,
+                            "oc_pointer": "601538202|17|10|192.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "192.5 Б",
+                            "oc_rate": 1.885,
+                            "oc_pointer": "601538202|17|9|192.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "89.5 М",
+                            "oc_rate": 1.9,
+                            "oc_pointer": "601538202|15|12|89.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "89.5 Б",
+                            "oc_rate": 1.9,
+                            "oc_pointer": "601538202|15|11|89.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "103.5 М",
+                            "oc_rate": 1.832,
+                            "oc_pointer": "601538202|62|14|103.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "103.5 Б",
+                            "oc_rate": 1.97,
+                            "oc_pointer": "601538202|62|13|103.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+11.5)",
+                            "oc_rate": 2.045,
+                            "oc_pointer": "601538202|2|7|11.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-11.5)",
+                            "oc_rate": 1.775,
+                            "oc_pointer": "601538202|2|8|-11.5",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": null,
+                    "game_id": 601542483,
+                    "game_mid": 601542483,
+                    "game_num": 230232,
+                    "game_dop_name": "№7,с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "№7,с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062000,
+                    "game_oc_counter": 110,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2626462,
+                    "tournament_name": "NBA 2K24. Cyber League",
+                    "tournament_name_ru": "NBA 2K24. Cyber League",
+                    "tournament_name_en": "NBA 2K24. Cyber League",
+                    "opp_1_name": "Los Angeles Clippers (cyber)",
+                    "opp_2_name": "Minnesota Timberwolves (cyber)",
+                    "opp_1_name_ru": "Los Angeles Clippers (cyber)",
+                    "opp_2_name_ru": "Minnesota Timberwolves (cyber)",
+                    "opp_1_name_en": "Los Angeles Clippers (cyber)",
+                    "opp_2_name_en": "Minnesota Timberwolves (cyber)",
+                    "opp_1_id": 3668451,
+                    "opp_1_ids": [
+                        3668451
+                    ],
+                    "opp_2_id": 3667765,
+                    "opp_2_ids": [
+                        3667765
+                    ],
+                    "opp_1_icon": "e4dbc8901ab84abd352af7ca8ce0581f.png",
+                    "opp_2_icon": "be4f98031e1ca8078e40f722f08fd618.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "17:24",
+                    "score_extra": "0:0",
+                    "score_period": "17:24",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 720,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 3.94,
+                            "oc_pointer": "601542483|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.168,
+                            "oc_pointer": "601542483|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "186.5 М",
+                            "oc_rate": 1.925,
+                            "oc_pointer": "601542483|17|10|186.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "186.5 Б",
+                            "oc_rate": 1.88,
+                            "oc_pointer": "601542483|17|9|186.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "88.5 М",
+                            "oc_rate": 1.835,
+                            "oc_pointer": "601542483|15|12|88.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "88.5 Б",
+                            "oc_rate": 1.968,
+                            "oc_pointer": "601542483|15|11|88.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "99.5 М",
+                            "oc_rate": 1.816,
+                            "oc_pointer": "601542483|62|14|99.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "99.5 Б",
+                            "oc_rate": 1.992,
+                            "oc_pointer": "601542483|62|13|99.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+11.5)",
+                            "oc_rate": 1.888,
+                            "oc_pointer": "601542483|2|7|11.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-11.5)",
+                            "oc_rate": 1.912,
+                            "oc_pointer": "601542483|2|8|-11.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 4.66,
+                            "oc_pointer": "601542483|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 1.18,
+                            "oc_pointer": "601542483|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 19,
+                            "oc_pointer": "601542483|2766|3654|0",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2172405,
+            "tournament_name": "Table Basketball League",
+            "events_list": [
+                {
+                    "sgame_id": "67c67a8e9930a40b3c809670",
+                    "stat_id": "67767fcf0d8c0bfbf14366a8",
+                    "ext_game_id": 15558883,
+                    "game_id": 601541186,
+                    "game_mid": 601541186,
+                    "game_num": 229986,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741060698,
+                    "game_oc_counter": 33,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2172405,
+                    "tournament_name": "Table Basketball League",
+                    "tournament_name_ru": "Table Basketball League",
+                    "tournament_name_en": "Table Basketball League",
+                    "opp_1_name": "Russia (TBL)",
+                    "opp_2_name": "France (TBL)",
+                    "opp_1_name_ru": "Russia (TBL)",
+                    "opp_2_name_ru": "France (TBL)",
+                    "opp_1_name_en": "Russia (TBL)",
+                    "opp_2_name_en": "France (TBL)",
+                    "opp_1_id": 4724067,
+                    "opp_1_ids": [
+                        4724067
+                    ],
+                    "opp_2_id": 4724069,
+                    "opp_2_ids": [
+                        4724069
+                    ],
+                    "opp_1_icon": "a693377b5e674c310f50d63d42ecf93d.png",
+                    "opp_2_icon": "af8d1c112f13b4e96378dcf02d04a86a.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "75:68",
+                    "score_extra": "0:0",
+                    "score_period": "23:23;20:21;22:16;10:8",
+                    "period_name": "4 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 2072,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "1-я четверть",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.001,
+                            "oc_pointer": "601541186|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 7.12,
+                            "oc_pointer": "601541186|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 17.3,
+                            "oc_pointer": "601541186|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 7.75,
+                            "oc_pointer": "601541186|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "166.5 Б",
+                            "oc_rate": 1.855,
+                            "oc_pointer": "601541186|17|9|166.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "166.5 М",
+                            "oc_rate": 1.808,
+                            "oc_pointer": "601541186|17|10|166.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-6.5)",
+                            "oc_rate": 1.81,
+                            "oc_pointer": "601541186|2|7|-6.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+6.5)",
+                            "oc_rate": 1.535,
+                            "oc_pointer": "601541186|2|8|6.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "86.5 Б",
+                            "oc_rate": 1.904,
+                            "oc_pointer": "601541186|15|11|86.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "86.5 М",
+                            "oc_rate": 1.76,
+                            "oc_pointer": "601541186|15|12|86.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "80.5 Б",
+                            "oc_rate": 2.115,
+                            "oc_pointer": "601541186|62|13|80.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "80.5 М",
+                            "oc_rate": 1.615,
+                            "oc_pointer": "601541186|62|14|80.5",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": "67c67aac9930a40b3c85418c",
+                    "stat_id": "67767fcf0d8c0bfbf14366a8",
+                    "ext_game_id": 15558894,
+                    "game_id": 601541310,
+                    "game_mid": 601541310,
+                    "game_num": 230012,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741060729,
+                    "game_oc_counter": 30,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2172405,
+                    "tournament_name": "Table Basketball League",
+                    "tournament_name_ru": "Table Basketball League",
+                    "tournament_name_en": "Table Basketball League",
+                    "opp_1_name": "Brazil (TBL)",
+                    "opp_2_name": "Finland (TBL)",
+                    "opp_1_name_ru": "Brazil (TBL)",
+                    "opp_2_name_ru": "Finland (TBL)",
+                    "opp_1_name_en": "Brazil (TBL)",
+                    "opp_2_name_en": "Finland (TBL)",
+                    "opp_1_id": 4942029,
+                    "opp_1_ids": [
+                        4942029
+                    ],
+                    "opp_2_id": 6126881,
+                    "opp_2_ids": [
+                        6126881
+                    ],
+                    "opp_1_icon": "94ff2682261f2ae5d635a65cbfae8b59.png",
+                    "opp_2_icon": "3a4580591a5301cbea47ae040c8014ce.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "86:65",
+                    "score_extra": "0:0",
+                    "score_period": "25:18;19:17;27:18;15:12",
+                    "period_name": "4 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 2072,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "1-я четверть",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "174.5 Б",
+                            "oc_rate": 1.7,
+                            "oc_pointer": "601541310|17|9|174.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "174.5 М",
+                            "oc_rate": 1.98,
+                            "oc_pointer": "601541310|17|10|174.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-21.5)",
+                            "oc_rate": 1.64,
+                            "oc_pointer": "601541310|2|7|-21.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+21.5)",
+                            "oc_rate": 1.68,
+                            "oc_pointer": "601541310|2|8|21.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "98.5 Б",
+                            "oc_rate": 2.016,
+                            "oc_pointer": "601541310|15|11|98.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "98.5 М",
+                            "oc_rate": 1.675,
+                            "oc_pointer": "601541310|15|12|98.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "76.5 Б",
+                            "oc_rate": 1.76,
+                            "oc_pointer": "601541310|62|13|76.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "76.5 М",
+                            "oc_rate": 1.904,
+                            "oc_pointer": "601541310|62|14|76.5",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": 0,
+                    "game_id": 601545908,
+                    "game_mid": 601545908,
+                    "game_num": 227155,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741063800,
+                    "game_oc_counter": 49,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2172405,
+                    "tournament_name": "Table Basketball League",
+                    "tournament_name_ru": "Table Basketball League",
+                    "tournament_name_en": "Table Basketball League",
+                    "opp_1_name": "Russia (TBL)",
+                    "opp_2_name": "Brazil (TBL)",
+                    "opp_1_name_ru": "Russia (TBL)",
+                    "opp_2_name_ru": "Brazil (TBL)",
+                    "opp_1_name_en": "Russia (TBL)",
+                    "opp_2_name_en": "Brazil (TBL)",
+                    "opp_1_id": 4724067,
+                    "opp_1_ids": [
+                        4724067
+                    ],
+                    "opp_2_id": 4942029,
+                    "opp_2_ids": [
+                        4942029
+                    ],
+                    "opp_1_icon": "a693377b5e674c310f50d63d42ecf93d.png",
+                    "opp_2_icon": "94ff2682261f2ae5d635a65cbfae8b59.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "0:0",
+                    "score_extra": "0:0",
+                    "score_period": "0:0",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 0,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.84,
+                            "oc_pointer": "601545908|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.82,
+                            "oc_pointer": "601545908|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.925,
+                            "oc_pointer": "601545908|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 13,
+                            "oc_pointer": "601545908|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 1.91,
+                            "oc_pointer": "601545908|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "176.5 Б",
+                            "oc_rate": 1.84,
+                            "oc_pointer": "601545908|17|9|176.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "176.5 М",
+                            "oc_rate": 1.82,
+                            "oc_pointer": "601545908|17|10|176.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-1.5)",
+                            "oc_rate": 2.03,
+                            "oc_pointer": "601545908|2|8|-1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+1.5)",
+                            "oc_rate": 1.664,
+                            "oc_pointer": "601545908|2|7|1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "88.5 Б",
+                            "oc_rate": 1.88,
+                            "oc_pointer": "601545908|15|11|88.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "88.5 М",
+                            "oc_rate": 1.784,
+                            "oc_pointer": "601545908|15|12|88.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "88.5 Б",
+                            "oc_rate": 1.87,
+                            "oc_pointer": "601545908|62|13|88.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "88.5 М",
+                            "oc_rate": 1.792,
+                            "oc_pointer": "601545908|62|14|88.5",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": 0,
+                    "game_id": 601545922,
+                    "game_mid": 601545922,
+                    "game_num": 227185,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741063801,
+                    "game_oc_counter": 49,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2172405,
+                    "tournament_name": "Table Basketball League",
+                    "tournament_name_ru": "Table Basketball League",
+                    "tournament_name_en": "Table Basketball League",
+                    "opp_1_name": "France (TBL)",
+                    "opp_2_name": "Finland (TBL)",
+                    "opp_1_name_ru": "France (TBL)",
+                    "opp_2_name_ru": "Finland (TBL)",
+                    "opp_1_name_en": "France (TBL)",
+                    "opp_2_name_en": "Finland (TBL)",
+                    "opp_1_id": 4724069,
+                    "opp_1_ids": [
+                        4724069
+                    ],
+                    "opp_2_id": 6126881,
+                    "opp_2_ids": [
+                        6126881
+                    ],
+                    "opp_1_icon": "af8d1c112f13b4e96378dcf02d04a86a.png",
+                    "opp_2_icon": "3a4580591a5301cbea47ae040c8014ce.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "0:0",
+                    "score_extra": "0:0",
+                    "score_period": "0:0",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 0,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.835,
+                            "oc_pointer": "601545922|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.825,
+                            "oc_pointer": "601545922|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.925,
+                            "oc_pointer": "601545922|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 13,
+                            "oc_pointer": "601545922|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 1.91,
+                            "oc_pointer": "601545922|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "172.5 Б",
+                            "oc_rate": 1.84,
+                            "oc_pointer": "601545922|17|9|172.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "172.5 М",
+                            "oc_rate": 1.82,
+                            "oc_pointer": "601545922|17|10|172.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-1.5)",
+                            "oc_rate": 2.03,
+                            "oc_pointer": "601545922|2|8|-1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+1.5)",
+                            "oc_rate": 1.664,
+                            "oc_pointer": "601545922|2|7|1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "86.5 Б",
+                            "oc_rate": 1.88,
+                            "oc_pointer": "601545922|15|11|86.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "86.5 М",
+                            "oc_rate": 1.784,
+                            "oc_pointer": "601545922|15|12|86.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "86.5 Б",
+                            "oc_rate": 1.87,
+                            "oc_pointer": "601545922|62|13|86.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "86.5 М",
+                            "oc_rate": 1.79,
+                            "oc_pointer": "601545922|62|14|86.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2496666,
+            "tournament_name": "IPBL. Pro Division",
+            "events_list": [
+                {
+                    "sgame_id": "67c67acb9930a40b3c89821b",
+                    "stat_id": "677c3a260d8c0bfbf124f64d",
+                    "ext_game_id": 15558874,
+                    "game_id": 601540630,
+                    "game_mid": 601540630,
+                    "game_num": 228693,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741060800,
+                    "game_oc_counter": 46,
+                    "country_id": 1,
+                    "country_name": "Россия",
+                    "tournament_id": 2496666,
+                    "tournament_name": "IPBL. Pro Division",
+                    "tournament_name_ru": "IPBL. Pro Division",
+                    "tournament_name_en": "IPBL. Pro Division",
+                    "opp_1_name": "Ural",
+                    "opp_2_name": "Siberia",
+                    "opp_1_name_ru": "Ural",
+                    "opp_2_name_ru": "Siberia",
+                    "opp_1_name_en": "Ural",
+                    "opp_2_name_en": "Siberia",
+                    "opp_1_id": 4288519,
+                    "opp_1_ids": [
+                        4288519
+                    ],
+                    "opp_2_id": 4288523,
+                    "opp_2_ids": [
+                        4288523
+                    ],
+                    "opp_1_icon": "9a6dc20ec158be4e7f73764d873fe457.png",
+                    "opp_2_icon": "4a85a9532e9d14090593e56365ebc905.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "56:73",
+                    "score_extra": "0:0",
+                    "score_period": "20:25;20:25;16:23",
+                    "period_name": "3 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 1792,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "175.5 Б",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601540630|17|9|175.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "175.5 М",
+                            "oc_rate": 1.89,
+                            "oc_pointer": "601540630|17|10|175.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-16.5)",
+                            "oc_rate": 1.76,
+                            "oc_pointer": "601540630|2|8|-16.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+16.5)",
+                            "oc_rate": 1.904,
+                            "oc_pointer": "601540630|2|7|16.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "79.5 Б",
+                            "oc_rate": 1.915,
+                            "oc_pointer": "601540630|15|11|79.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "79.5 М",
+                            "oc_rate": 1.785,
+                            "oc_pointer": "601540630|15|12|79.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "96.5 Б",
+                            "oc_rate": 1.91,
+                            "oc_pointer": "601540630|62|13|96.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "96.5 М",
+                            "oc_rate": 1.79,
+                            "oc_pointer": "601540630|62|14|96.5",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": "67c67d239930a40b3cd5e79f",
+                    "stat_id": "677c3a260d8c0bfbf124f64d",
+                    "ext_game_id": 15558920,
+                    "game_id": 601541860,
+                    "game_mid": 601541860,
+                    "game_num": 230052,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741061401,
+                    "game_oc_counter": 51,
+                    "country_id": 1,
+                    "country_name": "Россия",
+                    "tournament_id": 2496666,
+                    "tournament_name": "IPBL. Pro Division",
+                    "tournament_name_ru": "IPBL. Pro Division",
+                    "tournament_name_en": "IPBL. Pro Division",
+                    "opp_1_name": "Asbest",
+                    "opp_2_name": "Essentuki",
+                    "opp_1_name_ru": "Asbest",
+                    "opp_2_name_ru": "Essentuki",
+                    "opp_1_name_en": "Asbest",
+                    "opp_2_name_en": "Essentuki",
+                    "opp_1_id": 8629425,
+                    "opp_1_ids": [
+                        8629425
+                    ],
+                    "opp_2_id": 8630731,
+                    "opp_2_ids": [
+                        8630731
+                    ],
+                    "opp_1_icon": "ae4cf8687250b1703a7d5b149962ceb4.png",
+                    "opp_2_icon": "5ca3aa30c48e850f3057f61e6b0f566e.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "68:56",
+                    "score_extra": "0:0",
+                    "score_period": "20:23;38:21;10:12",
+                    "period_name": "3 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 1525,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.14,
+                            "oc_pointer": "601541860|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 5.42,
+                            "oc_pointer": "601541860|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.144,
+                            "oc_pointer": "601541860|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 13,
+                            "oc_pointer": "601541860|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 5.97,
+                            "oc_pointer": "601541860|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "210.5 Б",
+                            "oc_rate": 1.92,
+                            "oc_pointer": "601541860|17|9|210.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "210.5 М",
+                            "oc_rate": 1.82,
+                            "oc_pointer": "601541860|17|10|210.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-10.5)",
+                            "oc_rate": 1.865,
+                            "oc_pointer": "601541860|2|7|-10.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+10.5)",
+                            "oc_rate": 1.792,
+                            "oc_pointer": "601541860|2|8|10.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "110.5 Б",
+                            "oc_rate": 1.86,
+                            "oc_pointer": "601541860|15|11|110.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "110.5 М",
+                            "oc_rate": 1.84,
+                            "oc_pointer": "601541860|15|12|110.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "99.5 Б",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601541860|62|13|99.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "99.5 М",
+                            "oc_rate": 1.87,
+                            "oc_pointer": "601541860|62|14|99.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2068966,
+            "tournament_name": "Rocket League",
+            "events_list": [
+                {
+                    "sgame_id": "67c67acc9930a40b3c89b077",
+                    "stat_id": "6776478f0d8c0bfbf111b8a5",
+                    "ext_game_id": 15558882,
+                    "game_id": 601541168,
+                    "game_mid": 601541168,
+                    "game_num": 229964,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741060800,
+                    "game_oc_counter": 94,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2068966,
+                    "tournament_name": "Rocket League",
+                    "tournament_name_ru": "Rocket League",
+                    "tournament_name_en": "Rocket League",
+                    "opp_1_name": "Raiders (Red)",
+                    "opp_2_name": "Gunners (Green)",
+                    "opp_1_name_ru": "Raiders (Red)",
+                    "opp_2_name_ru": "Gunners (Green)",
+                    "opp_1_name_en": "Raiders (Red)",
+                    "opp_2_name_en": "Gunners (Green)",
+                    "opp_1_id": 3850907,
+                    "opp_1_ids": [
+                        3850907
+                    ],
+                    "opp_2_id": 4292393,
+                    "opp_2_ids": [
+                        4292393
+                    ],
+                    "opp_1_icon": "057f45ff31a76d783da0c3836b3ce680.png",
+                    "opp_2_icon": "620d8e56b505010eae167e7a1cb2b24f.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "67:65",
+                    "score_extra": "0:0",
+                    "score_period": "38:30;29:35",
+                    "period_name": "2 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 1389,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4x12",
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.69,
+                            "oc_pointer": "601541168|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 2.08,
+                            "oc_pointer": "601541168|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.765,
+                            "oc_pointer": "601541168|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 13,
+                            "oc_pointer": "601541168|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 2.19,
+                            "oc_pointer": "601541168|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "1Х",
+                            "oc_rate": 1.63,
+                            "oc_pointer": "601541168|2768|3656|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "12",
+                            "oc_rate": 1.001,
+                            "oc_pointer": "601541168|2768|3657|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "2Х",
+                            "oc_rate": 1.99,
+                            "oc_pointer": "601541168|2768|3658|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "256.5 Б",
+                            "oc_rate": 1.856,
+                            "oc_pointer": "601541168|17|9|256.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "256.5 М",
+                            "oc_rate": 1.95,
+                            "oc_pointer": "601541168|17|10|256.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-2.5)",
+                            "oc_rate": 1.952,
+                            "oc_pointer": "601541168|2|7|-2.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+2.5)",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601541168|2|8|2.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "129.5 Б",
+                            "oc_rate": 1.92,
+                            "oc_pointer": "601541168|15|11|129.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "129.5 М",
+                            "oc_rate": 1.88,
+                            "oc_pointer": "601541168|15|12|129.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "127.5 Б",
+                            "oc_rate": 1.895,
+                            "oc_pointer": "601541168|62|13|127.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "127.5 М",
+                            "oc_rate": 1.905,
+                            "oc_pointer": "601541168|62|14|127.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2496667,
+            "tournament_name": "IPBL. Pro Division. Женщины",
+            "events_list": [
+                {
+                    "sgame_id": "67c67acb9930a40b3c898294",
+                    "stat_id": "677c3a260d8c0bfbf1250262",
+                    "ext_game_id": 15558835,
+                    "game_id": 601540259,
+                    "game_mid": 601540259,
+                    "game_num": 228007,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741060801,
+                    "game_oc_counter": 51,
+                    "country_id": 1,
+                    "country_name": "Россия",
+                    "tournament_id": 2496667,
+                    "tournament_name": "IPBL. Pro Division. Женщины",
+                    "tournament_name_ru": "IPBL. Pro Division. Женщины",
+                    "tournament_name_en": "IPBL. Pro Division. Women",
+                    "opp_1_name": "Krasnoyarsk (жен)",
+                    "opp_2_name": "Orenburg (жен)",
+                    "opp_1_name_ru": "Krasnoyarsk (жен)",
+                    "opp_2_name_ru": "Orenburg (жен)",
+                    "opp_1_name_en": "Krasnoyarsk (Women)",
+                    "opp_2_name_en": "Orenburg (Women)",
+                    "opp_1_id": 4466825,
+                    "opp_1_ids": [
+                        4466825
+                    ],
+                    "opp_2_id": 4466827,
+                    "opp_2_ids": [
+                        4466827
+                    ],
+                    "opp_1_icon": "7e0eaaba530c83b2e793aca0485ffff2.png",
+                    "opp_2_icon": "c11a9fcd08d915a76e0719fee8bc71ab.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "97:87",
+                    "score_extra": "0:0",
+                    "score_period": "38:27;31:29;26:29;2:2",
+                    "period_name": "4 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 1863,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.075,
+                            "oc_pointer": "601540259|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 7.74,
+                            "oc_pointer": "601540259|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.075,
+                            "oc_pointer": "601540259|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 13,
+                            "oc_pointer": "601540259|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 8.96,
+                            "oc_pointer": "601540259|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "230.5 Б",
+                            "oc_rate": 1.79,
+                            "oc_pointer": "601540259|17|9|230.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "230.5 М",
+                            "oc_rate": 1.955,
+                            "oc_pointer": "601540259|17|10|230.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-9.5)",
+                            "oc_rate": 1.808,
+                            "oc_pointer": "601540259|2|7|-9.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+9.5)",
+                            "oc_rate": 1.856,
+                            "oc_pointer": "601540259|2|8|9.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "120.5 Б",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601540259|15|11|120.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "120.5 М",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601540259|15|12|120.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "110.5 Б",
+                            "oc_rate": 1.88,
+                            "oc_pointer": "601540259|62|13|110.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "110.5 М",
+                            "oc_rate": 1.82,
+                            "oc_pointer": "601540259|62|14|110.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2684288,
+            "tournament_name": "2K24. NBA",
+            "events_list": [
+                {
+                    "sgame_id": "67c67ff49930a40b3c308cfc",
+                    "stat_id": "67748a350d8c0bfbf16905da",
+                    "ext_game_id": 15558982,
+                    "game_id": 601543821,
+                    "game_mid": 601543821,
+                    "game_num": 230336,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741061400,
+                    "game_oc_counter": 44,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2684288,
+                    "tournament_name": "2K24. NBA",
+                    "tournament_name_ru": "2K24. NBA",
+                    "tournament_name_en": "2K24. NBA",
+                    "opp_1_name": "Utah Jazz (Noah_6121)",
+                    "opp_2_name": "Brooklyn Nets (Tyrese_5665)",
+                    "opp_1_name_ru": "Utah Jazz (Noah_6121)",
+                    "opp_2_name_ru": "Brooklyn Nets (Tyrese_5665)",
+                    "opp_1_name_en": "Utah Jazz (Noah_6121)",
+                    "opp_2_name_en": "Brooklyn Nets (Tyrese_5665)",
+                    "opp_1_id": 8528209,
+                    "opp_1_ids": [
+                        8528209
+                    ],
+                    "opp_2_id": 8589259,
+                    "opp_2_ids": [
+                        8589259
+                    ],
+                    "opp_1_icon": "07304819e9dfcfd649cb6159cb796362.png",
+                    "opp_2_icon": "ecbfa1028157157afcb8489e4c544d47.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "10:13",
+                    "score_extra": "0:0",
+                    "score_period": "10:13",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 346,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4x12",
+                    "finale": false,
+                    "game_desk": "1-я четверть",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 3.4,
+                            "oc_pointer": "601543821|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.26,
+                            "oc_pointer": "601543821|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 3.48,
+                            "oc_pointer": "601543821|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 13,
+                            "oc_pointer": "601543821|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 1.25,
+                            "oc_pointer": "601543821|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "1Х",
+                            "oc_rate": 3.225,
+                            "oc_pointer": "601543821|2768|3656|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "12",
+                            "oc_rate": 1.001,
+                            "oc_pointer": "601543821|2768|3657|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "2Х",
+                            "oc_rate": 1.24,
+                            "oc_pointer": "601543821|2768|3658|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "188.5 Б",
+                            "oc_rate": 1.815,
+                            "oc_pointer": "601543821|17|9|188.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "188.5 М",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601543821|17|10|188.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-10.5)",
+                            "oc_rate": 1.9,
+                            "oc_pointer": "601543821|2|8|-10.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+10.5)",
+                            "oc_rate": 1.805,
+                            "oc_pointer": "601543821|2|7|10.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "89.5 Б",
+                            "oc_rate": 1.875,
+                            "oc_pointer": "601543821|15|11|89.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "89.5 М",
+                            "oc_rate": 1.825,
+                            "oc_pointer": "601543821|15|12|89.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "99.5 Б",
+                            "oc_rate": 1.888,
+                            "oc_pointer": "601543821|62|13|99.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "99.5 М",
+                            "oc_rate": 1.816,
+                            "oc_pointer": "601543821|62|14|99.5",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": "67c683009930a40b3c94dd70",
+                    "stat_id": "67748a350d8c0bfbf16905da",
+                    "ext_game_id": 15559050,
+                    "game_id": 601545236,
+                    "game_mid": 601545236,
+                    "game_num": 227042,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062900,
+                    "game_oc_counter": 44,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2684288,
+                    "tournament_name": "2K24. NBA",
+                    "tournament_name_ru": "2K24. NBA",
+                    "tournament_name_en": "2K24. NBA",
+                    "opp_1_name": "San Antonio Spurs (Kornet_4095)",
+                    "opp_2_name": "Portland Trail Blazers (Green_2002)",
+                    "opp_1_name_ru": "San Antonio Spurs (Kornet_4095)",
+                    "opp_2_name_ru": "Portland Trail Blazers (Green_2002)",
+                    "opp_1_name_en": "San Antonio Spurs (Kornet_4095)",
+                    "opp_2_name_en": "Portland Trail Blazers (Green_2002)",
+                    "opp_1_id": 8685189,
+                    "opp_1_ids": [
+                        8685189
+                    ],
+                    "opp_2_id": 8871987,
+                    "opp_2_ids": [
+                        8871987
+                    ],
+                    "opp_1_icon": "e5c5d46b0130ca75002c022ac35f6e7d.png",
+                    "opp_2_icon": "f55ad2f2a4190ebd365fabf1a0e9787d.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "0:0",
+                    "score_extra": "0:0",
+                    "score_period": "0:0",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 0,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4x12",
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.464,
+                            "oc_pointer": "601545236|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 2.465,
+                            "oc_pointer": "601545236|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.464,
+                            "oc_pointer": "601545236|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 13,
+                            "oc_pointer": "601545236|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 2.504,
+                            "oc_pointer": "601545236|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "1Х",
+                            "oc_rate": 1.43,
+                            "oc_pointer": "601545236|2768|3656|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "12",
+                            "oc_rate": 1.001,
+                            "oc_pointer": "601545236|2768|3657|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "2Х",
+                            "oc_rate": 2.368,
+                            "oc_pointer": "601545236|2768|3658|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "198.5 Б",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601545236|17|9|198.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "198.5 М",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601545236|17|10|198.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-5.5)",
+                            "oc_rate": 1.81,
+                            "oc_pointer": "601545236|2|7|-5.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+5.5)",
+                            "oc_rate": 1.89,
+                            "oc_pointer": "601545236|2|8|5.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "101.5 Б",
+                            "oc_rate": 1.795,
+                            "oc_pointer": "601545236|15|11|101.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "101.5 М",
+                            "oc_rate": 1.904,
+                            "oc_pointer": "601545236|15|12|101.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "96.5 Б",
+                            "oc_rate": 1.865,
+                            "oc_pointer": "601545236|62|13|96.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "96.5 М",
+                            "oc_rate": 1.832,
+                            "oc_pointer": "601545236|62|14|96.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2186917,
+            "tournament_name": "NBA. H2H GG League",
+            "events_list": [
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": 0,
+                    "game_id": 601542684,
+                    "game_mid": 601542684,
+                    "game_num": 230262,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741061700,
+                    "game_oc_counter": 2,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2186917,
+                    "tournament_name": "NBA. H2H GG League",
+                    "tournament_name_ru": "NBA. H2H GG League",
+                    "tournament_name_en": "NBA. H2H GG League",
+                    "opp_1_name": "Денвер Наггетс (AIRFORCE)",
+                    "opp_2_name": "Даллас Маверикс (AVATAR)",
+                    "opp_1_name_ru": "Денвер Наггетс (AIRFORCE)",
+                    "opp_2_name_ru": "Даллас Маверикс (AVATAR)",
+                    "opp_1_name_en": "Denver Nuggets (AIRFORCE)",
+                    "opp_2_name_en": "Dallas Mavericks (AVATAR)",
+                    "opp_1_id": 9081743,
+                    "opp_1_ids": [
+                        9081743
+                    ],
+                    "opp_2_id": 9178467,
+                    "opp_2_ids": [
+                        9178467
+                    ],
+                    "opp_1_icon": "106229a807b3f71beac93d235cac5b5c.png",
+                    "opp_2_icon": "23154579f0feaa80e52fa05a1fe3ec13.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "57:65",
+                    "score_extra": "0:0",
+                    "score_period": "17:19;10:13;14:15;16:18",
+                    "period_name": "4 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 0,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4x5 minutes",
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": []
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": 0,
+                    "game_id": 601544472,
+                    "game_mid": 601544472,
+                    "game_num": 225612,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062600,
+                    "game_oc_counter": 20,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2186917,
+                    "tournament_name": "NBA. H2H GG League",
+                    "tournament_name_ru": "NBA. H2H GG League",
+                    "tournament_name_en": "NBA. H2H GG League",
+                    "opp_1_name": "Нью-Йорк Никс (SPARKZ)",
+                    "opp_2_name": "Даллас Маверикс (LANES)",
+                    "opp_1_name_ru": "Нью-Йорк Никс (SPARKZ)",
+                    "opp_2_name_ru": "Даллас Маверикс (LANES)",
+                    "opp_1_name_en": "New York Knicks (SPARKZ)",
+                    "opp_2_name_en": "Dallas Mavericks (LANES)",
+                    "opp_1_id": 9082613,
+                    "opp_1_ids": [
+                        9082613
+                    ],
+                    "opp_2_id": 7389397,
+                    "opp_2_ids": [
+                        7389397
+                    ],
+                    "opp_1_icon": "9a1ca301d7eabfa2d85c00789eceaa04.png",
+                    "opp_2_icon": "402cc0a18f6356b7279f9103ec0a9b80.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "26:25",
+                    "score_extra": "0:0",
+                    "score_period": "20:19;6:6",
+                    "period_name": "2 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 183,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4x5 minutes",
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-1.5)",
+                            "oc_rate": 1.94,
+                            "oc_pointer": "601544472|2|7|-1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+1.5)",
+                            "oc_rate": 1.73,
+                            "oc_pointer": "601544472|2|8|1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "133.5 Б",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601544472|17|9|133.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "133.5 М",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601544472|17|10|133.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601544472|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601544472|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "67.5 Б",
+                            "oc_rate": 1.984,
+                            "oc_pointer": "601544472|15|11|67.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "67.5 М",
+                            "oc_rate": 1.7,
+                            "oc_pointer": "601544472|15|12|67.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "65.5 Б",
+                            "oc_rate": 1.64,
+                            "oc_pointer": "601544472|62|13|65.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "65.5 М",
+                            "oc_rate": 2.07,
+                            "oc_pointer": "601544472|62|14|65.5",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": 0,
+                    "game_id": 601545541,
+                    "game_mid": 601545541,
+                    "game_num": 227144,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062600,
+                    "game_oc_counter": 24,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2186917,
+                    "tournament_name": "NBA. H2H GG League",
+                    "tournament_name_ru": "NBA. H2H GG League",
+                    "tournament_name_en": "NBA. H2H GG League",
+                    "opp_1_name": "Бостон Селтикс (KARMA)",
+                    "opp_2_name": "Финикс Санз (SAINT JR)",
+                    "opp_1_name_ru": "Бостон Селтикс (KARMA)",
+                    "opp_2_name_ru": "Финикс Санз (SAINT JR)",
+                    "opp_1_name_en": "Boston Celtics (KARMA)",
+                    "opp_2_name_en": "Phoenix Suns (SAINT JR)",
+                    "opp_1_id": 4361585,
+                    "opp_1_ids": [
+                        4361585
+                    ],
+                    "opp_2_id": 7678181,
+                    "opp_2_ids": [
+                        7678181
+                    ],
+                    "opp_1_icon": "6ed5b4e80ef2431ffaaac467a95a3a85.png",
+                    "opp_2_icon": "98221f0affd3ea80a24f37ec64caaac7.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "0:2",
+                    "score_extra": "0:0",
+                    "score_period": "0:2",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 232,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4x5 minutes",
+                    "finale": false,
+                    "game_desk": "1-я четверть",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+1.5)",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601545541|2|7|1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-1.5)",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601545541|2|8|-1.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "106.5 Б",
+                            "oc_rate": 1.9,
+                            "oc_pointer": "601545541|17|9|106.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "106.5 М",
+                            "oc_rate": 1.765,
+                            "oc_pointer": "601545541|17|10|106.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.984,
+                            "oc_pointer": "601545541|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.7,
+                            "oc_pointer": "601545541|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "52.5 Б",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601545541|15|11|52.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "52.5 М",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601545541|15|12|52.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "53.5 Б",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601545541|62|13|53.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "53.5 М",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601545541|62|14|53.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2672002,
+            "tournament_name": "Чемпионат Новой Зеландии. Предсезонные матчи",
+            "events_list": [
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": 0,
+                    "game_id": 601543143,
+                    "game_mid": 601543143,
+                    "game_num": 230291,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741061700,
+                    "game_oc_counter": 278,
+                    "country_id": 135,
+                    "country_name": "Новая Зеландия",
+                    "tournament_id": 2672002,
+                    "tournament_name": "Чемпионат Новой Зеландии. Предсезонные матчи",
+                    "tournament_name_ru": "Чемпионат Новой Зеландии. Предсезонные матчи",
+                    "tournament_name_en": "New Zealand. NBL. Preseason Matches",
+                    "opp_1_name": "Кентербери Рэмс",
+                    "opp_2_name": "Манавату Джетс",
+                    "opp_1_name_ru": "Кентербери Рэмс",
+                    "opp_2_name_ru": "Манавату Джетс",
+                    "opp_1_name_en": "Canterbury Rams",
+                    "opp_2_name_en": "Manawatu Jets",
+                    "opp_1_id": 49321,
+                    "opp_1_ids": [
+                        49321
+                    ],
+                    "opp_2_id": 6648,
+                    "opp_2_ids": [
+                        6648
+                    ],
+                    "opp_1_icon": "49321.png",
+                    "opp_2_icon": "5d5d23aaff437a682aaebdc56fc99488.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "40:15",
+                    "score_extra": "0:0",
+                    "score_period": "30:15;10:0",
+                    "period_name": "2 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 734,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "1-я четверть",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-29.5)",
+                            "oc_rate": 1.89,
+                            "oc_pointer": "601543143|2|7|-29.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+29.5)",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601543143|2|8|29.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "178.5 Б",
+                            "oc_rate": 1.89,
+                            "oc_pointer": "601543143|17|9|178.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "178.5 М",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601543143|17|10|178.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "103.5 Б",
+                            "oc_rate": 1.81,
+                            "oc_pointer": "601543143|15|11|103.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "103.5 М",
+                            "oc_rate": 1.91,
+                            "oc_pointer": "601543143|15|12|103.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "74.5 Б",
+                            "oc_rate": 1.91,
+                            "oc_pointer": "601543143|62|13|74.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "74.5 М",
+                            "oc_rate": 1.81,
+                            "oc_pointer": "601543143|62|14|74.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2658251,
+            "tournament_name": "Филиппины. NCAA до 19 лет",
+            "events_list": [
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": 15558967,
+                    "game_id": 601543510,
+                    "game_mid": 601543510,
+                    "game_num": 230321,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741061700,
+                    "game_oc_counter": 254,
+                    "country_id": 196,
+                    "country_name": "Филиппины",
+                    "tournament_id": 2658251,
+                    "tournament_name": "Филиппины. NCAA до 19 лет",
+                    "tournament_name_ru": "Филиппины. NCAA до 19 лет",
+                    "tournament_name_en": "Philippines. NCAA U19",
+                    "opp_1_name": "Эмильо Агуинальдо Колледж Генералс (19)",
+                    "opp_2_name": "Университет Хосе Рисаль (19)",
+                    "opp_1_name_ru": "Эмильо Агуинальдо Колледж Генералс (19)",
+                    "opp_2_name_ru": "Университет Хосе Рисаль (19)",
+                    "opp_1_name_en": "Emilio Aguinaldo College Generals U19",
+                    "opp_2_name_en": "University Jose Rizal U19",
+                    "opp_1_id": 8395629,
+                    "opp_1_ids": [
+                        8395629
+                    ],
+                    "opp_2_id": 8395275,
+                    "opp_2_ids": [
+                        8395275
+                    ],
+                    "opp_1_icon": "6f315d0af987c720a87f81c04e25023f.png",
+                    "opp_2_icon": "c765e101b4cbda80bf73e1dabd94e690.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "22:10",
+                    "score_extra": "0:0",
+                    "score_period": "22:6;0:4",
+                    "period_name": "2 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 682,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "1-я четверть",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-15.5)",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601543510|2|7|-15.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+15.5)",
+                            "oc_rate": 1.89,
+                            "oc_pointer": "601543510|2|8|15.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.016,
+                            "oc_pointer": "601543510|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 17,
+                            "oc_pointer": "601543510|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 11.7,
+                            "oc_pointer": "601543510|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.016,
+                            "oc_pointer": "601543510|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 10.5,
+                            "oc_pointer": "601543510|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "1Х",
+                            "oc_rate": 1.01,
+                            "oc_pointer": "601543510|2768|3656|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "2Х",
+                            "oc_rate": 9.79,
+                            "oc_pointer": "601543510|2768|3658|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "12",
+                            "oc_rate": 1.01,
+                            "oc_pointer": "601543510|2768|3657|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "75.5 М",
+                            "oc_rate": 1.775,
+                            "oc_pointer": "601543510|15|12|75.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "75.5 Б",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601543510|15|11|75.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "59.5 М",
+                            "oc_rate": 1.735,
+                            "oc_pointer": "601543510|62|14|59.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "59.5 Б",
+                            "oc_rate": 1.875,
+                            "oc_pointer": "601543510|62|13|59.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "134.5 Б",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601543510|17|9|134.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "134.5 М",
+                            "oc_rate": 1.81,
+                            "oc_pointer": "601543510|17|10|134.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2693204,
+            "tournament_name": "2K24. Euroleague",
+            "events_list": [
+                {
+                    "sgame_id": "67c681d49930a40b3c6c3964",
+                    "stat_id": "677487de0d8c0bfbf1ffa4f7",
+                    "ext_game_id": 15559017,
+                    "game_id": 601544613,
+                    "game_mid": 601544613,
+                    "game_num": 225622,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062600,
+                    "game_oc_counter": 32,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2693204,
+                    "tournament_name": "2K24. Euroleague",
+                    "tournament_name_ru": "2K24. Euroleague",
+                    "tournament_name_en": "2K24. Euroleague",
+                    "opp_1_name": "Fenerbahce (Shavon_6344)",
+                    "opp_2_name": "AS Monaco (Kendel_5929)",
+                    "opp_1_name_ru": "Fenerbahce (Shavon_6344)",
+                    "opp_2_name_ru": "AS Monaco (Kendel_5929)",
+                    "opp_1_name_en": "Fenerbahce (Shavon_6344)",
+                    "opp_2_name_en": "AS Monaco (Kendel_5929)",
+                    "opp_1_id": 8569753,
+                    "opp_1_ids": [
+                        8569753
+                    ],
+                    "opp_2_id": 8591473,
+                    "opp_2_ids": [
+                        8591473
+                    ],
+                    "opp_1_icon": "e7fb37687cde1ef44b3a0311d7b82d11.png",
+                    "opp_2_icon": "37afd464f407a1eaabe29a0ba0c151d8.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "10:10",
+                    "score_extra": "0:0",
+                    "score_period": "10:10",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 286,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4х10",
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 2.616,
+                            "oc_pointer": "601544613|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.416,
+                            "oc_pointer": "601544613|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "153.5 Б",
+                            "oc_rate": 1.792,
+                            "oc_pointer": "601544613|17|9|153.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "153.5 М",
+                            "oc_rate": 1.87,
+                            "oc_pointer": "601544613|17|10|153.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-5.5)",
+                            "oc_rate": 1.816,
+                            "oc_pointer": "601544613|2|8|-5.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+5.5)",
+                            "oc_rate": 1.888,
+                            "oc_pointer": "601544613|2|7|5.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "74.5 Б",
+                            "oc_rate": 1.904,
+                            "oc_pointer": "601544613|15|11|74.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "74.5 М",
+                            "oc_rate": 1.795,
+                            "oc_pointer": "601544613|15|12|74.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "79.5 Б",
+                            "oc_rate": 1.83,
+                            "oc_pointer": "601544613|62|13|79.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "79.5 М",
+                            "oc_rate": 1.875,
+                            "oc_pointer": "601544613|62|14|79.5",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": "67c683009930a40b3c94dddc",
+                    "stat_id": "677487de0d8c0bfbf1ffa4f7",
+                    "ext_game_id": 15559032,
+                    "game_id": 601544982,
+                    "game_mid": 601544982,
+                    "game_num": 226716,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062900,
+                    "game_oc_counter": 48,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2693204,
+                    "tournament_name": "2K24. Euroleague",
+                    "tournament_name_ru": "2K24. Euroleague",
+                    "tournament_name_en": "2K24. Euroleague",
+                    "opp_1_name": "Baskonia (Ozzy_9673)",
+                    "opp_2_name": "Bayern Munich (Rokas_3470)",
+                    "opp_1_name_ru": "Baskonia (Ozzy_9673)",
+                    "opp_2_name_ru": "Bayern Munich (Rokas_3470)",
+                    "opp_1_name_en": "Baskonia (Ozzy_9673)",
+                    "opp_2_name_en": "Bayern Munich (Rokas_3470)",
+                    "opp_1_id": 8846295,
+                    "opp_1_ids": [
+                        8846295
+                    ],
+                    "opp_2_id": 9252281,
+                    "opp_2_ids": [
+                        9252281
+                    ],
+                    "opp_1_icon": "937acdcaba1158d6e66c36117c4f6832.png",
+                    "opp_2_icon": "17e48d432a84d489d892be0badfb385e.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "0:0",
+                    "score_extra": "0:0",
+                    "score_period": "0:0",
+                    "period_name": "1 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 0,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": "4х10",
+                    "finale": false,
+                    "game_desk": "",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 1.565,
+                            "oc_pointer": "601544982|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 2.22,
+                            "oc_pointer": "601544982|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 1.575,
+                            "oc_pointer": "601544982|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 13,
+                            "oc_pointer": "601544982|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 2.26,
+                            "oc_pointer": "601544982|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "1Х",
+                            "oc_rate": 1.525,
+                            "oc_pointer": "601544982|2768|3656|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "12",
+                            "oc_rate": 1.001,
+                            "oc_pointer": "601544982|2768|3657|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Двойной шанс на основное время",
+                            "oc_name": "2Х",
+                            "oc_rate": 2.13,
+                            "oc_pointer": "601544982|2768|3658|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "150.5 Б",
+                            "oc_rate": 1.835,
+                            "oc_pointer": "601544982|17|9|150.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "150.5 М",
+                            "oc_rate": 1.825,
+                            "oc_pointer": "601544982|17|10|150.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (-3.5)",
+                            "oc_rate": 1.825,
+                            "oc_pointer": "601544982|2|7|-3.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (+3.5)",
+                            "oc_rate": 1.875,
+                            "oc_pointer": "601544982|2|8|3.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "76.5 Б",
+                            "oc_rate": 1.81,
+                            "oc_pointer": "601544982|15|11|76.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "76.5 М",
+                            "oc_rate": 1.89,
+                            "oc_pointer": "601544982|15|12|76.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "73.5 Б",
+                            "oc_rate": 1.86,
+                            "oc_pointer": "601544982|62|13|73.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "73.5 М",
+                            "oc_rate": 1.84,
+                            "oc_pointer": "601544982|62|14|73.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tournament_id": 2090001,
+            "tournament_name": "NBA. eSports Battle",
+            "events_list": [
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": 0,
+                    "game_id": 601544637,
+                    "game_mid": 601544637,
+                    "game_num": 225969,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062600,
+                    "game_oc_counter": 14,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2090001,
+                    "tournament_name": "NBA. eSports Battle",
+                    "tournament_name_ru": "NBA. eSports Battle",
+                    "tournament_name_en": "NBA. eSports Battle",
+                    "opp_1_name": "Филадельфия Севенти Сиксерс (Yaro)",
+                    "opp_2_name": "Финикс Санз (Zelya77)",
+                    "opp_1_name_ru": "Филадельфия Севенти Сиксерс (Yaro)",
+                    "opp_2_name_ru": "Финикс Санз (Zelya77)",
+                    "opp_1_name_en": "Philadelphia 76ers (Yaro)",
+                    "opp_2_name_en": "Phoenix Suns (Zelya77)",
+                    "opp_1_id": 8966321,
+                    "opp_1_ids": [
+                        8966321
+                    ],
+                    "opp_2_id": 8952309,
+                    "opp_2_ids": [
+                        8952309
+                    ],
+                    "opp_1_icon": "857fb651d0c0be58fa0baf16ea9ec509.png",
+                    "opp_2_icon": "d9b813e0537d8080cb98d2b00739f696.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "20:23",
+                    "score_extra": "0:0",
+                    "score_period": "14:11;6:12",
+                    "period_name": "2 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 120,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "1-я четверть",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "54.5 Б",
+                            "oc_rate": 1.88,
+                            "oc_pointer": "601544637|62|13|54.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "54.5 М",
+                            "oc_rate": 1.82,
+                            "oc_pointer": "601544637|62|14|54.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "100.5 Б",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601544637|17|9|100.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "100.5 М",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601544637|17|10|100.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "46.5 Б",
+                            "oc_rate": 1.955,
+                            "oc_pointer": "601544637|15|11|46.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "46.5 М",
+                            "oc_rate": 1.755,
+                            "oc_pointer": "601544637|15|12|46.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+8.5)",
+                            "oc_rate": 1.775,
+                            "oc_pointer": "601544637|2|7|8.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-8.5)",
+                            "oc_rate": 1.936,
+                            "oc_pointer": "601544637|2|8|-8.5",
+                            "oc_block": false
+                        }
+                    ]
+                },
+                {
+                    "sgame_id": 0,
+                    "stat_id": 0,
+                    "ext_game_id": 0,
+                    "game_id": 601544638,
+                    "game_mid": 601544638,
+                    "game_num": 226683,
+                    "game_dop_name": "с ОТ",
+                    "game_dop_name_langs": {
+                        "ru": "с ОТ",
+                        "en": ""
+                    },
+                    "game_start": 1741062600,
+                    "game_oc_counter": 19,
+                    "country_id": 225,
+                    "country_name": "Мир",
+                    "tournament_id": 2090001,
+                    "tournament_name": "NBA. eSports Battle",
+                    "tournament_name_ru": "NBA. eSports Battle",
+                    "tournament_name_en": "NBA. eSports Battle",
+                    "opp_1_name": "Бостон Селтикс (Yawhen)",
+                    "opp_2_name": "Даллас Маверикс (MaaaS1K)",
+                    "opp_1_name_ru": "Бостон Селтикс (Yawhen)",
+                    "opp_2_name_ru": "Даллас Маверикс (MaaaS1K)",
+                    "opp_1_name_en": "Boston Celtics (Yawhen)",
+                    "opp_2_name_en": "Dallas Mavericks (MaaaS1K)",
+                    "opp_1_id": 9028675,
+                    "opp_1_ids": [
+                        9028675
+                    ],
+                    "opp_2_id": 8701779,
+                    "opp_2_ids": [
+                        8701779
+                    ],
+                    "opp_1_icon": "7513055c4da54e5185ae20b0d6187603.png",
+                    "opp_2_icon": "9706bd370ea5d6e6b5c14d143c0aaadd.png",
+                    "sport_name": "Баскетбол",
+                    "sport_name_ru": "Баскетбол",
+                    "sport_name_en": "Basketball",
+                    "sport_id": 3,
+                    "score_full": "20:24",
+                    "score_extra": "0:0",
+                    "score_period": "10:12;10:12",
+                    "period_name": "2 Четверть",
+                    "stat_list": [],
+                    "stat_list_extra": [],
+                    "timer": 120,
+                    "extra_time": "",
+                    "pitch": null,
+                    "game_plan": null,
+                    "finale": false,
+                    "game_desk": "1-я четверть",
+                    "game_oc_list": [
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "106.5 Б",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601544638|17|9|106.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Тотал",
+                            "oc_name": "106.5 М",
+                            "oc_rate": 1.85,
+                            "oc_pointer": "601544638|17|10|106.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "55.5 Б",
+                            "oc_rate": 1.9,
+                            "oc_pointer": "601544638|62|13|55.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 2-го",
+                            "oc_name": "55.5 М",
+                            "oc_rate": 1.8,
+                            "oc_pointer": "601544638|62|14|55.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "1 (+4.5)",
+                            "oc_rate": 1.755,
+                            "oc_pointer": "601544638|2|7|4.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Фора",
+                            "oc_name": "2 (-4.5)",
+                            "oc_rate": 1.955,
+                            "oc_pointer": "601544638|2|8|-4.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П1",
+                            "oc_rate": 3.315,
+                            "oc_pointer": "601544638|2766|3653|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "Х",
+                            "oc_rate": 15.3,
+                            "oc_pointer": "601544638|2766|3654|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "1x2 на основное время",
+                            "oc_name": "П2",
+                            "oc_rate": 1.375,
+                            "oc_pointer": "601544638|2766|3655|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П1",
+                            "oc_rate": 3.048,
+                            "oc_pointer": "601544638|101|401|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Победа в матче",
+                            "oc_name": "П2",
+                            "oc_rate": 1.33,
+                            "oc_pointer": "601544638|101|402|0",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "51.5 Б",
+                            "oc_rate": 1.936,
+                            "oc_pointer": "601544638|15|11|51.5",
+                            "oc_block": false
+                        },
+                        {
+                            "oc_group_name": "Индивидуальный тотал 1-го",
+                            "oc_name": "51.5 М",
+                            "oc_rate": 1.775,
+                            "oc_pointer": "601544638|15|12|51.5",
+                            "oc_block": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
